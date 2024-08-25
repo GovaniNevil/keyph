@@ -1,0 +1,75 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: "Rajdhani", sans-serif !important;
+}
+h2{
+    font-size: 46px !important;
+    font-weight: 500 !important;
+    line-height: 58px !important;
+}
+*{
+    font-family: "Roboto", sans-serif;
+}
+.about::after {
+    position: absolute;
+    content: '';
+    top: -100px;
+    right: -190px;
+    width: 445px;
+    height: 100%;
+    background-image: url(/src/assets/images/cloud.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    z-index: 10;
+}
+p{
+    font-size: 16px !important;
+    line-height: 28px !important;
+}
+.banner{
+    background-image: url('../src//assets/images/Banner.png');
+    background-size: 100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: 1px #ffffff30;
+      font-size: 200px !important;
+      color: #0A6ED1;
+      font-weight: 700;    
+    }
+}
+.banner-box{
+    transform: translate(-50% , -50%);
+}
+.container{
+    max-width: 1750px !important;
+    width: 100%;
+    padding:32px 75px 0px;
+    margin: 0 auto;
+}
+.subtitle h3.titlelight:before{
+    background-color: #ffffff !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 40%;
+}
+.subtitle h3:before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 60%;
+    height: 3px;
+    background-color: #0A6ED1;
+    border-radius: 2px;
+}
+#products{
+    background-image: linear-gradient(#0A6ED1 , #0A4B8B);
+}
+.contact-from .container .row{
+    background-image: url('../src/assets/images/contact-background-img.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
