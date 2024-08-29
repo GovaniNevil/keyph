@@ -46,12 +46,9 @@ function Header() {
           <li>
             <a href="../pages/services.jsx" className="text-gray-900 hover:text-black-900 transition duration-200">Service</a>
           </li>
-           {/* <li>
-            <a href="/lab-product" className="text-gray-900 hover:text-black-900 transition duration-200">Blog</a>
-          </li> 
           <li>
-            <a href="/placement-package" className="text-gray-900 hover:text-black-900 transition duration-200">Support</a>
-          </li> */}
+            <a href="../pages/ourproduct.jsx" className="text-gray-900 hover:text-black-900 transition duration-200">Our Product</a>
+          </li> 
         </ul>
         <div className="contact-btn">
           <a href="../pages/contact-us.jsx" className='flex items-center gap-2'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>

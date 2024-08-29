@@ -6,6 +6,7 @@ import Aboutbanner from '../component/aboutbanner'
 import Aboutintro from '../component/aboutintro'
 import Whyus from '../component/whyus'
 import Vision from '../component/vision'
+import Process from '../component/process'
 
 const Aboutus = () => {
   return (
@@ -14,6 +15,7 @@ const Aboutus = () => {
         <Aboutbanner />
         <Aboutintro />
         <Whyus />
+        <Process />
         <Vision />
         <Contact/>
         <Footer/>
