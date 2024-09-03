@@ -5,7 +5,7 @@ import Contactbtn from '../images/contact-us-icon.png'
 const Products = () => {
     return (
         <>
-            <section className='products py-24 px-40' id='products'>
+            <section className='products py-12 lg:py-24 px-20 lg:px-40' id='products'>
                 <div className="title">
                     <div className="subtitle">
                         <h3 className='titlelight mx-auto text-3xl font-bold text-white relative w-max'>OUR PRODUCTS</h3>
@@ -13,7 +13,7 @@ const Products = () => {
                     <p className='text-white text-center mt-5'>Explore Our Range of Solar and Renewable Energy Services</p>
                 </div>
                 <div className="product-row mt-24">
-                    <div className="grid grid-cols-3 gap-24 justify-center">
+                    <div className="grid lg:grid-cols-3 gap-24 justify-center">
                         <div className="box">
                             <div className="img">
                                 <img src={Boximg} alt="" />

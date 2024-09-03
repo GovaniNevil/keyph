@@ -4,13 +4,13 @@ import Freedomimg from '../images/freedom-solar.png'
 const Freedom = () => {
     return (
         <>
-            <section className="freedom">
+            <section className="freedom text-center lg:text-left">
                 <div className="container">
                     <div className="box relative">
                         <div className="img">
                             <img src={Freedomimg} alt="" />
                         </div>
-                        <div className="content absolute top-[10%] left-[15%] rounded-3xl w-[40%] bg-[#00133760] p-8">
+                        <div className="content lg:absolute top-[10%] left-[15%] rounded-3xl lg:w-[40%] bg-[#00133760] p-8">
                             <div className="title ">
                                 <h5 className='text-[40px] font-bold text-white'>Experience the freedom of solar energy. </h5>
                             </div>

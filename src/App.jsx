@@ -6,6 +6,7 @@ import Services from './assets/pages/services'
 import Contactus from './assets/pages/contact-us'
 import Navbar from './assets/component/header'
 import Ourproduct from './assets/pages/ourproduct'
+import Ourproject from './assets/pages/ourproject'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
           <Route path='/pages/services.jsx' element={<Services />} />
           <Route path='/pages/contact-us.jsx' element={<Contactus />} />
           <Route path='/pages/ourproduct.jsx' element={<Ourproduct />} />
+          <Route path='/pages/ourproject.jsx' element={<Ourproject />} />
         </Routes>
       </main>
     </Router>

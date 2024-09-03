@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../images/logo.svg';
 import MenuIcon from '../images/hamburger.png'; 
 import CloseIcon from '../images/hamburger.png';
-import Contactbtn from '../images/contact-us-icon.png'
+import Contactbtn from '../images/contact-us-icon.png';
+import { IoIosCall } from "react-icons/io";
+import { CiMail } from "react-icons/ci";
+import { FaFile } from "react-icons/fa";
+
+
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,15 +15,30 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []); 
 
   return (
-    <header className={`px-4 md:px-8 lg:px-32 fixed top-0 left-0 right-0 z-[99] bg-white transition-all duration-300 border-gray-200 ${isScrolled ? 'py-2' : 'py-2'} ${!isScrolled ? 'border-none' : 'border-b'}`}>
-      <div className="  mx-auto flex items-center justify-between">
+    <header className=" fixed top-0 left-0 right-0 z-[99] transition-all duration-300">
+      <div className={`mt-[-55px] topheader bg-[#068b4a] px-4 md:px-8 lg:px-32 py-3 flex items-center justify-between  ${isScrolled ? 'hidden' : 'block'}`}>
+        <div className="call-box text-white">
+          <ul>
+            <li className='inline-block mr-5'><a href="tel:+919892679540" className='flex gap-2 items-center'><span className='text-xl'><IoIosCall /></span>+919892679540</a></li>
+            <li className='inline-block'><a href="tel:+917304933751" className='flex gap-2 items-center'><span className='text-xl'><IoIosCall /></span> +917304933751</a></li>
+          </ul>
+        </div>
+        <div className="mail-box text-white">
+          <ul>
+            <li className='inline-block mr-5'><a href="mailto:contact@keyphsolar.com" className='flex gap-2 items-center'><span className='text-xl'><CiMail /></span>contact@keyphsolar.com</a></li>
+            <li className='inline-block'><a href="#" className='flex gap-2 items-center'><span className='text-xl'><FaFile />
+            </span> Downlond Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div className={` bulreffect mx-auto flex items-center justify-between border-gray-200 px-4 md:px-8 lg:px-32 ${isScrolled ? 'py-2' : 'py-2'}`}>
 
         {/* Logo (with Mobile Icon) */}
         <div className="flex items-center">
@@ -36,51 +56,53 @@ function Header() {
         </div>
 
         {/* Navigation Links (Large Screen) */}
-        <ul className="hidden lg:flex space-x-12 lg:space-x-8 text-gray-800">
+        <ul className="hidden lg:flex space-x-12 lg:space-x-8 text-white">
           <li>
-            <a href="/" className="text-black-900 hover:text-black-900 transition duration-200">Home</a>
+            <a href="/" className="text-white transition duration-200">Home</a>
           </li>
            <li>
-            <a href="../pages/about-us.jsx" className="text-gray-900 hover:text-black-900 transition duration-200">About Us</a>
+            <a href="../pages/about-us.jsx" className="text-white transition duration-200">About Us</a>
           </li>
           <li>
-            <a href="../pages/services.jsx" className="text-gray-900 hover:text-black-900 transition duration-200">Service</a>
+            <a href="../pages/services.jsx" className="text-white transition duration-200">Service</a>
           </li>
           <li>
-            <a href="../pages/ourproduct.jsx" className="text-gray-900 hover:text-black-900 transition duration-200">Our Product</a>
+            <a href="../pages/ourproduct.jsx" className="text-white transition duration-200">Our Product</a>
           </li> 
+          <li>
+            <a href="../pages/ourproject.jsx" className="text-white transition duration-200">Our Project</a>
+          </li>
+          <li>
+            <a href="../pages/contact-us.jsx" className='flex items-center gap-2 text-white'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
+          </li>
         </ul>
-        <div className="contact-btn">
-          <a href="../pages/contact-us.jsx" className='flex items-center gap-2'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
-        </div>
+          
       </div>
 
       {/* Mobile Menu (Small Screen) */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full inset-x-0 h-[100vh] bg-white p-4 rounded-md shadow-lg z-20 transition-transform duration-300 transform origin-top">
-          <ul className="space-y-6 text-center">
+          <ul className="text-white">
           <li>
-            <a href="/" className="text-gray-900 hover:text-blck-900 transition duration-200">Home</a>
+            <a href="/" className="text-white transition duration-200 mb-4">Home</a>
           </li>
-          {/* <li>
-            <a href="/about" className="text-gray-900 hover:text-blck-900 transition duration-200">About Us</a>
-          </li>
-          <li>
-            <a href="/contact" className="text-gray-900 hover:text-blck-900 transition duration-200">Contact Us</a>
+           <li>
+            <a href="../pages/about-us.jsx" className="text-white transition duration-200 mb-4">About Us</a>
           </li>
           <li>
-            <a href="/lab-product" className="text-gray-900 hover:text-blck-900 transition duration-200">Lab Product</a>
+            <a href="../pages/services.jsx" className="text-white transition duration-200 mb-4">Service</a>
           </li>
           <li>
-            <a href="/placement-package" className="text-gray-900 hover:text-blck-900 transition duration-200">Placement Package</a>
-          </li> */}
+            <a href="../pages/ourproduct.jsx" className="text-white transition duration-200 mb-4">Our Product</a>
+          </li> 
           <li>
-            <a href="https://gradwise.in/user"className='border border-[#4E489B] px-8 py-3 rounded-full bg-[white] hover:bg-[#4E489B] text-[#4E489B] hover:text-[white] transition duration-500'>Log In</a>
+            <a href="../pages/ourproject.jsx" className="text-white transition duration-200 mb-4">Our Project</a>
           </li>
           <li>
-            <a href="https://forms.office.com/r/uqziAMarwM" className= 'border border-[#4E489B] px-8 py-3 rounded-full bg-[#4E489B] hover:bg-[white] text-white hover:text-[#4E489B] transition duration-500'>Request A Demo</a>
+            <a href="../pages/contact-us.jsx" className='flex items-center gap-2 text-white'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
           </li>
-          </ul>
+        </ul>
+          
         </div>
       )}
     </header>

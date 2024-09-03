@@ -7,6 +7,7 @@ import Aboutintro from '../component/aboutintro'
 import Whyus from '../component/whyus'
 import Vision from '../component/vision'
 import Process from '../component/process'
+import Partner from '../component/partner'
 
 const Aboutus = () => {
   return (
@@ -16,6 +17,7 @@ const Aboutus = () => {
         <Aboutintro />
         <Whyus />
         <Process />
+        <Partner />
         <Vision />
         <Contact/>
         <Footer/>

@@ -28,12 +28,11 @@ const Servicedetail = () => {
                         </div>
                         <div className="content ">
                             <div className="title mt-9 mb-4">
-                                <h2 className='text-[#0A6ED1] font-bold'>On Grid</h2>
+                                <h2 className='text-[#0A6ED1] font-bold'>Off Grid</h2>
                             </div>
                             <p className='mb-4'>In an off-grid solar system the electricity generated from the panels is transmitted from the Solar Inverter to the appliances at your home and also towards the battery . The energy stored in the battery is used during night. This runs independently from/off the power grid and hence does not  require any permission from the electricity board.
                             </p>
                             <p className='mb-4'>The cost of an off-grid solar system has an even wider range because there are a variety of sizes, applications, and components that impact the price.
-
                             </p>
                             <p className='mb-4'>An alternative to off-grid solar systems is a hybrid system, which remains tied to the grid but includes a solar battery bank to store excess energy.
                             </p>
@@ -71,10 +70,10 @@ const Servicedetail = () => {
                         </div>
                         <div className="content w-2/4">
                             <div className="title mb-4">
-                                <h2 className='text-[#0A6ED1] font-bold'>Panel Cleaning
+                                <h2 className='text-[#0A6ED1] font-bold'>Mechanical & electrical health check
                                 </h2>
                             </div>
-                            <p className='mb-4'>Regular cleaning of solar panels is essential to ensure they operate at peak efficiency. Dust, dirt, and debris can accumulate on the panels, reducing their ability to absorb sunlight and generate energy. With our free AMC (Annual Maintenance Contract) for the first year, we provide thorough cleaning services to keep your panels spotless and functioning optimally
+                            <p className='mb-4'>To ensure the longevity and reliability of your solar system, it’s crucial to perform regular mechanical and electrical health checks. Our team of experts will inspect all components of your solar setup, including wiring, connections, and mechanical parts, to identify and address any issues before they become significant problems. This proactive approach helps maintain the system's efficiency and safety
                             </p>
                         </div>
 
@@ -82,10 +81,10 @@ const Servicedetail = () => {
                     <div className="box flex items-center mt-20 gap-11">
                         <div className="content w-2/4">
                             <div className="title mb-4">
-                                <h2 className='text-[#0A6ED1] font-bold'>Panel Cleaning
+                                <h2 className='text-[#0A6ED1] font-bold'>Monitoring performance
                                 </h2>
                             </div>
-                            <p className='mb-4'>Regular cleaning of solar panels is essential to ensure they operate at peak efficiency. Dust, dirt, and debris can accumulate on the panels, reducing their ability to absorb sunlight and generate energy. With our free AMC (Annual Maintenance Contract) for the first year, we provide thorough cleaning services to keep your panels spotless and functioning optimally
+                            <p className='mb-4'>Monitoring the performance of your solar system allows us to track its energy output and identify any discrepancies or declines in performance. With our performance monitoring service, we use advanced tools and technologies to continually assess the efficiency of your solar panels, ensuring they deliver the expected energy savings
                             </p>
                         </div>
                         <div className="img ">
@@ -98,20 +97,26 @@ const Servicedetail = () => {
                         </div>
                         <div className="content w-2/4">
                             <div className="title mb-4">
-                                <h2 className='text-[#0A6ED1] font-bold'>Panel Cleaning
-                                </h2>
+                                <h2 className='text-[#0A6ED1] font-bold'>Quick, Easy & Affordable Financing Options</h2>
                             </div>
-                            <p className='mb-4'>Regular cleaning of solar panels is essential to ensure they operate at peak efficiency. Dust, dirt, and debris can accumulate on the panels, reducing their ability to absorb sunlight and generate energy. With our free AMC (Annual Maintenance Contract) for the first year, we provide thorough cleaning services to keep your panels spotless and functioning optimally
+                            <p className='mb-4'>Switching to solar energy is a significant investment, but it shouldn’t be a financial burden. We offer various financing options that are quick, easy, and affordable to suit different budgets and needs. Our financing solutions are designed to make solar energy accessible to everyone, allowing you to enjoy the benefits of renewable energy without the stress of upfront costs. These options include flexible payment plans and competitive interest rates, ensuring that transitioning to solar power is both convenient and financially feasible.
                             </p>
                         </div>
                     </div>
                     <div className="box flex items-center mt-20 gap-11">
                         <div className="content w-2/4">
                             <div className="title mb-4">
-                                <h2 className='text-[#0A6ED1] font-bold'>Panel Cleaning
+                                <h2 className='text-[#0A6ED1] font-bold'>First Year Free AMC which includes
                                 </h2>
                             </div>
-                            <p className='mb-4'>Regular cleaning of solar panels is essential to ensure they operate at peak efficiency. Dust, dirt, and debris can accumulate on the panels, reducing their ability to absorb sunlight and generate energy. With our free AMC (Annual Maintenance Contract) for the first year, we provide thorough cleaning services to keep your panels spotless and functioning optimally
+                            <p className='mb-4'>
+                                <ul>
+                                    <li className='mb-5'>Yearly 4 Visit every 3 months.</li>
+                                    <li className='mb-5'>Inverter Checkup</li>
+                                    <li className='mb-5'>Wiring & Installation Checkup</li>
+                                    <li className='mb-5'>Performance verification</li>
+                                    <li className='mb-5'>Panel replacement if required</li>
+                                </ul>
                             </p>
                         </div>
                         <div className="img ">

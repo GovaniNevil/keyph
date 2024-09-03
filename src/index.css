@@ -89,3 +89,35 @@ p{
     background-size: 60%;
     background-repeat: no-repeat;
 }
+
+.bulreffect{
+    position: relative;
+	z-index: 1;
+	background: inherit;
+}
+.bulreffect::before{
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 500px 50px 1000px rgb(58 120 186);
+    filter: blur(0px);
+}
+
+@media only screen and (max-width: 640px) {
+    .about::after{
+        display: none !important;
+    }
+    .contact-from .container .row{
+        background-image: none;
+    }
+    h2{
+        font-size: 26px !important;
+        font-weight: 500 !important;
+        line-height: 28px !important;
+    }
+}
