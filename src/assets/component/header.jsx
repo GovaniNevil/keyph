@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <header className=" fixed top-0 left-0 right-0 z-[99] transition-all duration-300">
-      <div className={`mt-[-55px] topheader bg-[#068b4a] px-4 md:px-8 lg:px-32 py-3 flex items-center justify-between  ${isScrolled ? 'hidden' : 'block'}`}>
+      <div className={`mt-[-55px] topheader bg-[#068b4a] px-4 hidden lg:flex md:px-8 lg:px-32 py-3 items-center justify-between  ${isScrolled ? 'hidden' : 'block'}`}>
         <div className="call-box text-white">
           <ul>
             <li className='inline-block mr-5'><a href="tel:+919892679540" className='flex gap-2 items-center'><span className='text-xl'><IoIosCall /></span>+919892679540</a></li>
