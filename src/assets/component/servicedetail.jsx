@@ -1,8 +1,14 @@
 import React from 'react'
 import FullService from '../images/service-detail-1.png'
 import HalfService from '../images/service-detail-2.png'
+import Ongrid from '../images/on-grid.png'
+import Panelcleaning from '../images/pannel-cleaning.png'
+import Mechanical from '../images/electrical-menegment.png'
+import Monitering from '../images/monitaring.png'
+import Easy from '../images/easy-solution.png'
+import AMC from '../images/amc-service.png'
 
-
+ 
 const Servicedetail = () => {
     return (
         <>
@@ -10,9 +16,9 @@ const Servicedetail = () => {
                 <div className="container">
                     <div className="box">
                         <div className="img">
-                            <img src={FullService} alt="" />
+                            <img src={Ongrid} alt="" />
                         </div>
-                        <div className="content ">
+                        <div className="content text-center md:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>On Grid</h2>
                             </div>
@@ -26,7 +32,7 @@ const Servicedetail = () => {
                         <div className="img">
                             <img src={FullService} alt="" />
                         </div>
-                        <div className="content ">
+                        <div className="content text-center md:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>Off Grid</h2>
                             </div>
@@ -42,7 +48,7 @@ const Servicedetail = () => {
                         <div className="img">
                             <img src={FullService} alt="" />
                         </div>
-                        <div className="content ">
+                        <div className="content text-center md:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>Hybrid Solar</h2>
                             </div>
@@ -61,12 +67,12 @@ const Servicedetail = () => {
                             </p>
                         </div>
                         <div className="img ">
-                            <img src={HalfService} alt="" />
+                            <img src={Panelcleaning} alt="" />
                         </div>
                     </div>
                     <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="img ">
-                            <img src={HalfService} alt="" />
+                            <img src={Mechanical} alt="" />
                         </div>
                         <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
@@ -88,12 +94,12 @@ const Servicedetail = () => {
                             </p>
                         </div>
                         <div className="img ">
-                            <img src={HalfService} alt="" />
+                            <img src={Monitering} alt="" />
                         </div>
                     </div>
                     <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="img ">
-                            <img src={HalfService} alt="" />
+                            <img src={Easy} alt="" />
                         </div>
                         <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
@@ -120,7 +126,7 @@ const Servicedetail = () => {
                             </p>
                         </div>
                         <div className="img ">
-                            <img src={HalfService} alt="" />
+                            <img src={AMC} alt="" />
                         </div>
                     </div>
                 </div>

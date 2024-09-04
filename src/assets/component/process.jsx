@@ -49,7 +49,7 @@ const Process = () => {
 
     return (
         <>
-            <section className="process py-36" id="process">
+            <section className="process py-12 md:py-36" id="process">
                 <div className="container">
                     <div className="title">
                         <div className="subtitle mb-8">

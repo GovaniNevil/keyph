@@ -4,10 +4,10 @@ import Solarpowerimg from '../images/solarpower.png'
 const Solarpower = () => {
     return (
         <>
-            <section className="solar-power my-36">
+            <section className="solar-power my-8 md:my-36">
                 <div className="container">
                     <div className="box flex flex-col-reverse md:flex-row items-center gap-16 md:gap-32">
-                        <div className="content-box md:w-2/4">
+                        <div className="content-box md:w-2/4 text-center md:text-left">
                             <div className="title">
                                 <h2>Solar Power: Your Path to
                                 Energy Independence</h2>

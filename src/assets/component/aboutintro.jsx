@@ -4,7 +4,7 @@ import Introabout from '../images/about-intro.png'
 const Aboutintro = () => {
     return (
         <>
-            <section className='aboutintro my-20 xl:mt-28'>
+            <section className='aboutintro my-8 md:my-20 xl:mt-28'>
                 <div className="container">
                     <div className="inner-box flex flex-col-reverse xl:flex-row justify-between items-start">
                         <div className="contant-box xl:w-2/4">

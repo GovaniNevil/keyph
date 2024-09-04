@@ -1,5 +1,10 @@
 import React from 'react'
 import Boximg from '../images/product-img-1.png'
+import Product1 from '../images/product-square (1).png'
+import Product2 from '../images/product-square (2).png'
+import Product3 from '../images/product-square (3).png'
+import Product4 from '../images/product-square (4).png'
+import Product5 from '../images/product-square (5).png'
 import Contactbtn from '../images/contact-us-icon.png'
 
 const Products = () => {
@@ -16,7 +21,7 @@ const Products = () => {
                     <div className="grid xl:grid-cols-3 lg:grid-cols-2 gap-24 justify-center">
                         <div className="box">
                             <div className="img">
-                                <img src={Boximg} alt="" className='mx-auto lg:mx-0'/>
+                                <img src={Product1} alt="" className='mx-auto lg:mx-0'/>
                             </div>
                             <div className="info-box text-white  text-center lg:text-left mt-5">
                                 <div className="title">
@@ -33,7 +38,7 @@ const Products = () => {
 
                         <div className="box">
                             <div className="img">
-                                <img src={Boximg} alt="" className='mx-auto lg:mx-0'/>
+                                <img src={Product2} alt="" className='mx-auto lg:mx-0'/>
                             </div>
                             <div className="info-box text-white text-center lg:text-left mt-5">
                                 <div className="title">
@@ -49,7 +54,7 @@ const Products = () => {
                         </div>
                         <div className="box">
                             <div className="img">
-                                <img src={Boximg} alt="" className='mx-auto lg:mx-0'/>
+                                <img src={Product3} alt="" className='mx-auto lg:mx-0'/>
                             </div>
                             <div className="info-box text-white  text-center lg:text-left mt-5">
                                 <div className="title">
@@ -65,7 +70,7 @@ const Products = () => {
                         </div>
                         <div className="box">
                             <div className="img">
-                                <img src={Boximg} alt="" className='mx-auto lg:mx-0'/>
+                                <img src={Product4} alt="" className='mx-auto lg:mx-0'/>
                             </div>
                             <div className="info-box text-white  text-center lg:text-left mt-5">
                                 <div className="title">
@@ -81,7 +86,7 @@ const Products = () => {
                         </div>
                         <div className="box">
                             <div className="img">
-                                <img src={Boximg} alt="" className='mx-auto lg:mx-0'/>
+                                <img src={Product5} alt="" className='mx-auto lg:mx-0'/>
                             </div>
                             <div className="info-box text-white  text-center lg:text-left mt-5">
                                 <div className="title">

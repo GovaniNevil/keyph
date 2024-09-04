@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../images/logo.svg';
 import MenuIcon from '../images/hamburger.png';
-import CloseIcon from '../images/hamburger.png';
+import CloseIcon from '../images/close.png';
 import Contactbtn from '../images/contact-us-icon.png';
 import { IoIosCall } from "react-icons/io";
 import { CiMail } from "react-icons/ci";

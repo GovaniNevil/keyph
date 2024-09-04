@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Ourproductbanner = () => {
+const Ourprojectbanner = () => {
   return (
     <>
         <section className="abutbanner relative h-[100vh] bg-[#0A6ED1] rounded-[90px]">
@@ -20,4 +20,4 @@ const Ourproductbanner = () => {
   )
 }
 
-export default Ourproductbanner
+export default Ourprojectbanner

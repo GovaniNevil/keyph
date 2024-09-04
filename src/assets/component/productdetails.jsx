@@ -1,4 +1,10 @@
 import React from 'react'
+import Productimg1 from '../images/product-details- (1).png'
+import Productimg2 from '../images/product-details- (2).png'
+import Productimg3 from '../images/product-details- (3).png'
+import Productimg4 from '../images/product-details- (4).png'
+import Productimg5 from '../images/product-details- (5).png'
+
 
 const Productdetails = () => {
     return (
@@ -10,9 +16,9 @@ const Productdetails = () => {
                             <h3 className='titlelight mx-auto text-3xl font-bold text-[#0A6ED1] relative w-max'>OUR PRODUCTS</h3>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
-                        <div className="grid xl:grid-cols-3 gap-7">
-                            <div className="content-box text-white">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-6 bg-[#0A6ED1] mb-12">
+                        <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
+                            <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
                                     <h2>01</h2>
                                 </div>
@@ -23,26 +29,13 @@ const Productdetails = () => {
                                 </p>
                             </div>
                             <div className="col-span-2">
-                                <div className="grid grid-cols-4 grid-rows-4 gap-5">
-                                    <div className="col-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-2 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-2 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-1 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-1 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                </div>
+                                <img src={Productimg1} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12">
-                        <div className="grid xl:grid-cols-3 gap-7">
-                            <div className="content-box text-white">
+                        <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
+                            <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
                                     <h2>02</h2>
                                 </div>
@@ -53,18 +46,13 @@ const Productdetails = () => {
                                 </p>
                             </div>
                             <div className="col-span-2">
-                                <div className="grid grid-cols-4 grid-rows-4 gap-5">
-                                    <div className="col-span-4 row-span-2 rounded-[20px] bg-[#1AB669] py-[70px] w-full">
-                                    </div>
-                                    <div className="col-span-4 row-span-2 rounded-[20px] bg-[#1AB669] py-9 w-full">
-                                    </div>
-                                </div>
+                                <img src={Productimg2} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
-                        <div className="grid xl:grid-cols-3 gap-7">
-                            <div className="content-box text-white">
+                        <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
+                            <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
                                     <h2>03</h2>
                                 </div>
@@ -75,18 +63,13 @@ const Productdetails = () => {
                                 </p>
                             </div>
                             <div className="col-span-2">
-                                <div className="grid grid-cols-4 grid-rows-4 gap-5">
-                                    <div className="col-span-4 row-span-2 rounded-[20px] bg-[#508FCE] py-[70px] w-full">
-                                    </div>
-                                    <div className="col-span-4 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                </div>
+                                <img src={Productimg3} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12">
-                        <div className="grid xl:grid-cols-3 gap-7">
-                            <div className="content-box text-white">
+                        <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
+                            <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
                                     <h2>04</h2>
                                 </div>
@@ -97,18 +80,13 @@ const Productdetails = () => {
                                 </p>
                             </div>
                             <div className="col-span-2">
-                                <div className="grid grid-cols-4 grid-rows-4 gap-5">
-                                    <div className="col-span-4 row-span-2 rounded-[20px] bg-[#1AB669] py-[70px] w-full">
-                                    </div>
-                                    <div className="col-span-4 row-span-2 rounded-[20px] bg-[#1AB669] py-9 w-full">
-                                    </div>
-                                </div>
+                                <img src={Productimg4} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
-                        <div className="grid xl:grid-cols-3 gap-7">
-                            <div className="content-box text-white">
+                        <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
+                            <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
                                     <h2>05</h2>
                                 </div>
@@ -119,20 +97,7 @@ const Productdetails = () => {
                                 </p>
                             </div>
                             <div className="col-span-2">
-                                <div className="grid grid-cols-4 grid-rows-4 gap-5">
-                                    <div className="col-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-2 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-2 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-1 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                    <div className="col-span-1 row-span-2 rounded-[20px] bg-[#508FCE] py-9 w-full">
-                                    </div>
-                                </div>
+                                <img src={Productimg5} alt="" />
                             </div>
                         </div>
                     </div>

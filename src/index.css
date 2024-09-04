@@ -158,12 +158,13 @@ p{
     }
     .font-outline-2 {
         -webkit-text-stroke: 1px #ffffff30;
-        font-size: 60px !important;
+        font-size: 50px !important;
         color: #0A6ED1;
-        font-weight: 700;    
+        font-weight: 700; 
+        text-align: center;   
       }
       h2{
-        font-size: 20px !important;
+        font-size: 30px !important;
         font-weight: 500 !important;
         line-height: 28px !important;
         margin: 20px 0px;
