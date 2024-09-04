@@ -8,7 +8,7 @@ function Footer() {
                 <div className="container my-10">
                     <div className="row lg:flex justify-between mb-6">
                         <div className="logo-box lg:w-[50%] mb-10 lg:mb-0">
-                            <a href="#"><img src={Logo} alt="" srcset="" className='mx-auto'/></a>
+                            <a href="#"><img src={Logo} alt="" srcset="" className='lg:mx-0 mx-auto'/></a>
                             <p className='lg:w-2/4 mt-8'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo </p>
                         </div>
                         <div className="link mb-10 lg:mb-0">
@@ -33,7 +33,7 @@ function Footer() {
                         <div className="left mb-4 ">
                             <p> Copyright ©2024</p>
                         </div>
-                        <div className="right flex gap-4 lg:gap-7 flex-col lg:items-center">
+                        <div className="right flex gap-4 lg:gap-7 flex-col lg:flex-row lg:items-center">
                             <a href="#">Terms</a>
                             <a href="#">Privacy</a>
                             <a href="#">Policy and Cookie Policy</a>

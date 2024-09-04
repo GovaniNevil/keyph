@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../images/logo.svg';
-import MenuIcon from '../images/hamburger.png'; 
+import MenuIcon from '../images/hamburger.png';
 import CloseIcon from '../images/hamburger.png';
 import Contactbtn from '../images/contact-us-icon.png';
 import { IoIosCall } from "react-icons/io";
@@ -19,7 +19,7 @@ function Header() {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []); 
+  }, []);
 
   return (
     <header className=" fixed top-0 left-0 right-0 z-[99] transition-all duration-300">
@@ -51,8 +51,8 @@ function Header() {
 
           {/* Logo */}
           <a href="/"> {/* Wrap the logo in a link to the homepage */}
-            <img src={Logo} alt="Your Logo" className="h-8 md:h-20 w-auto ml-4 md:ml-0" />
-          </a> 
+            <img src={Logo} alt="Your Logo" className="h-16 md:h-20 w-auto ml-4 md:ml-0" />
+          </a>
         </div>
 
         {/* Navigation Links (Large Screen) */}
@@ -60,7 +60,7 @@ function Header() {
           <li>
             <a href="/" className="text-white transition duration-200">Home</a>
           </li>
-           <li>
+          <li>
             <a href="../pages/about-us.jsx" className="text-white transition duration-200">About Us</a>
           </li>
           <li>
@@ -68,41 +68,44 @@ function Header() {
           </li>
           <li>
             <a href="../pages/ourproduct.jsx" className="text-white transition duration-200">Our Product</a>
-          </li> 
+          </li>
           <li>
             <a href="../pages/ourproject.jsx" className="text-white transition duration-200">Our Project</a>
           </li>
           <li>
-            <a href="../pages/contact-us.jsx" className='flex items-center gap-2 text-white'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
+
           </li>
         </ul>
-          
+
+        <div className="contact-box hidden lg:block">
+          <a href="../pages/contact-us.jsx" className='flex items-center gap-2 text-white'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
+        </div>
       </div>
 
       {/* Mobile Menu (Small Screen) */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full inset-x-0 h-[100vh] bg-white p-4 rounded-md shadow-lg z-20 transition-transform duration-300 transform origin-top">
-          <ul className="text-white">
-          <li>
-            <a href="/" className="text-white transition duration-200 mb-4">Home</a>
-          </li>
-           <li>
-            <a href="../pages/about-us.jsx" className="text-white transition duration-200 mb-4">About Us</a>
-          </li>
-          <li>
-            <a href="../pages/services.jsx" className="text-white transition duration-200 mb-4">Service</a>
-          </li>
-          <li>
-            <a href="../pages/ourproduct.jsx" className="text-white transition duration-200 mb-4">Our Product</a>
-          </li> 
-          <li>
-            <a href="../pages/ourproject.jsx" className="text-white transition duration-200 mb-4">Our Project</a>
-          </li>
-          <li>
-            <a href="../pages/contact-us.jsx" className='flex items-center gap-2 text-white'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
-          </li>
-        </ul>
-          
+          <ul className="text-black text-center">
+            <li className='mb-6'>
+              <a href="/" className="text-black text-center transition duration-200 ">Home</a>
+            </li>
+            <li className='mb-6'>
+              <a href="../pages/about-us.jsx" className="text-black text-center transition duration-200 ">About Us</a>
+            </li>
+            <li className='mb-6'>
+              <a href="../pages/services.jsx" className="text-black text-center transition duration-200 ">Service</a>
+            </li>
+            <li className='mb-6'>
+              <a href="../pages/ourproduct.jsx" className="text-black text-center transition duration-200 ">Our Product</a>
+            </li>
+            <li className='mb-6'>
+              <a href="../pages/ourproject.jsx" className="text-black text-center transition duration-200 ">Our Project</a>
+            </li>
+            <li>
+              <a href="../pages/contact-us.jsx" className='flex items-center gap-2 text-black text-center w-max mx-auto'>Contact Us<sapn><img src={Contactbtn} alt="" /></sapn></a>
+            </li>
+          </ul>
+
         </div>
       )}
     </header>

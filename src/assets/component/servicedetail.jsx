@@ -13,7 +13,7 @@ const Servicedetail = () => {
                             <img src={FullService} alt="" />
                         </div>
                         <div className="content ">
-                            <div className="title mt-9 mb-4">
+                            <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>On Grid</h2>
                             </div>
                             <p className='mb-4'>An on-grid solar system, also known as a	grid-tied solar system, is the most widely deployed form of rooftop solar across the world. These systems do not need any batteries and are connected to the utility grid power.</p>
@@ -27,7 +27,7 @@ const Servicedetail = () => {
                             <img src={FullService} alt="" />
                         </div>
                         <div className="content ">
-                            <div className="title mt-9 mb-4">
+                            <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>Off Grid</h2>
                             </div>
                             <p className='mb-4'>In an off-grid solar system the electricity generated from the panels is transmitted from the Solar Inverter to the appliances at your home and also towards the battery . The energy stored in the battery is used during night. This runs independently from/off the power grid and hence does not  require any permission from the electricity board.
@@ -43,7 +43,7 @@ const Servicedetail = () => {
                             <img src={FullService} alt="" />
                         </div>
                         <div className="content ">
-                            <div className="title mt-9 mb-4">
+                            <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>Hybrid Solar</h2>
                             </div>
                             <p className='mb-4'>A Hybrid Solar System contains solar panels, a Solar	hybrid inverter, and battery storage to create an uninterrupted energy solution. </p>
@@ -51,8 +51,8 @@ const Servicedetail = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="box flex items-center mt-20 gap-11">
-                        <div className="content w-2/4">
+                    <div className="box flex flex-col-reverse lg:flex-row items-center md:mt-20 mt-10 md:gap-11 gap-4">
+                        <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
                                 <h2 className='text-[#0A6ED1] font-bold'>Panel Cleaning
                                 </h2>
@@ -64,11 +64,11 @@ const Servicedetail = () => {
                             <img src={HalfService} alt="" />
                         </div>
                     </div>
-                    <div className="box flex items-center mt-20 gap-11">
+                    <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="img ">
                             <img src={HalfService} alt="" />
                         </div>
-                        <div className="content w-2/4">
+                        <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
                                 <h2 className='text-[#0A6ED1] font-bold'>Mechanical & electrical health check
                                 </h2>
@@ -78,8 +78,8 @@ const Servicedetail = () => {
                         </div>
 
                     </div>
-                    <div className="box flex items-center mt-20 gap-11">
-                        <div className="content w-2/4">
+                    <div className="box flex flex-col-reverse lg:flex-row items-center md:mt-20 mt-10 md:gap-11 gap-4">
+                        <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
                                 <h2 className='text-[#0A6ED1] font-bold'>Monitoring performance
                                 </h2>
@@ -91,11 +91,11 @@ const Servicedetail = () => {
                             <img src={HalfService} alt="" />
                         </div>
                     </div>
-                    <div className="box flex items-center mt-20 gap-11">
+                    <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="img ">
                             <img src={HalfService} alt="" />
                         </div>
-                        <div className="content w-2/4">
+                        <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
                                 <h2 className='text-[#0A6ED1] font-bold'>Quick, Easy & Affordable Financing Options</h2>
                             </div>
@@ -103,19 +103,19 @@ const Servicedetail = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="box flex items-center mt-20 gap-11">
-                        <div className="content w-2/4">
+                    <div className="box flex flex-col-reverse lg:flex-row items-center md:mt-20 mt-10 md:gap-11 gap-4">
+                        <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
                                 <h2 className='text-[#0A6ED1] font-bold'>First Year Free AMC which includes
                                 </h2>
                             </div>
                             <p className='mb-4'>
                                 <ul>
-                                    <li className='mb-5'>Yearly 4 Visit every 3 months.</li>
-                                    <li className='mb-5'>Inverter Checkup</li>
-                                    <li className='mb-5'>Wiring & Installation Checkup</li>
-                                    <li className='mb-5'>Performance verification</li>
-                                    <li className='mb-5'>Panel replacement if required</li>
+                                    <li className='mb-3 lg:mb-5'>Yearly 4 Visit every 3 months.</li>
+                                    <li className='mb-3 lg:mb-5'>Inverter Checkup</li>
+                                    <li className='mb-3 lg:mb-5'>Wiring & Installation Checkup</li>
+                                    <li className='mb-3 lg:mb-5'>Performance verification</li>
+                                    <li className='mb-3 lg:mb-5'>Panel replacement if required</li>
                                 </ul>
                             </p>
                         </div>

@@ -8,10 +8,10 @@ const About = () => {
         <>
             <section className="about py-14 lg:py-32 relative overflow-hidden text-center lg:text-left">
                 <div className="container">
-                    <div className="inner-box sm:flex gap-14">
+                    <div className="inner-box lg:flex gap-14">
                         <div className="img-box relative">
-                            <img src={About1} alt="" className=''/>
-                            <img src={powerimg} alt="" className='hidden sm:block absolute -right-[20%] top-[50%] w-[220px]' />
+                            <img src={About1} alt="" className='mx-auto'/>
+                            <img src={powerimg} alt="" className='hidden xl:block absolute -right-[20%] top-[50%] w-[220px]' />
                         </div>
                         <div className="contant lg:w-[65%]">
                             <div className="title">
@@ -21,12 +21,12 @@ const About = () => {
                                     <a href="#">Learn More</a>
                                 </div>
                             </div>
-                            <div className="contant mt-20">
+                            <div className="contant mt-5 md:mt-20">
                                 <div className="box lg:flex lg:gap-10">
-                                    <div className="img-box ">
+                                    <div className="img-box hidden xl:block">
                                         <img src={About2} alt="" className='mx-auto' />
                                     </div>
-                                    <div className="content lg:w-[60%] mt-4 lg:mt-0">
+                                    <div className="content xl:w-[60%] mt-4 lg:mt-0">
                                         <p className='mb-4'>The global energy landscape will change more in the next 10 years than in the previous hundred. As the world’s energy sector moves away from fossil fuels toward renewable energy sources, industrial companies are challenged with addressing this transition in transformative ways.</p>
                                         <p>Renewable Energy harnesses the earth’s most abundant resources – the strength of the wind, the heat of the sun, ,and the force of water; delivering green electrons to power the world’s biggest economies and the most remote communities.</p>
                                     </div>

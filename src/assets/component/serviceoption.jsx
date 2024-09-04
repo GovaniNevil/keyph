@@ -12,7 +12,7 @@ const Serviceoption = () => {
     <>
         <section className="service-option">
             <div className="container">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
                     <div className="box p-8">
                         <div className="icon">
                             <img src={Icon1} alt="" />

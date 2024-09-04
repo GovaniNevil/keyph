@@ -5,10 +5,10 @@ const Whyus = () => {
         <>
             <section className="why-chooes-us bg-[#EAF4FF] py-24">
                 <div className="container">
-                    <div className="grid grid-cols-3 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
                         <div className="title">
                             <div className="">
-                                <h3 className='text-[60px] font-bold text-[#0A6ED1] relative w-[80%] '>Why Choose Us?</h3>
+                                <h3 className='xl:text-[60px] text-[50px] font-bold text-[#0A6ED1] relative w-[80%] '>Why Choose Us?</h3>
                                 <p>Whether you're looking to switch to solar energy or upgrade your services, our sales and marketing company is here to help.</p>
                             </div>
                         </div>

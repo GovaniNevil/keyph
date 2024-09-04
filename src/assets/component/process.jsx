@@ -12,6 +12,20 @@ const Process = () => {
         slidesToScroll: 1,
         autoplay: false,
         autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1030, // Breakpoint for smaller screens (tablets)
+                settings: {
+                    slidesToShow: 2, // Show 2 slides on tablets
+                },
+            },
+            {
+                breakpoint: 770, // Breakpoint for even smaller screens (phones)
+                settings: {
+                    slidesToShow: 1, // Show only 1 slide on phones
+                },
+            },
+        ],
     };
 
     const process = [
@@ -39,9 +53,9 @@ const Process = () => {
                 <div className="container">
                     <div className="title">
                         <div className="subtitle mb-8">
-                            <h3 className='titlelight mx-auto text-[40px] font-bold text-white relative w-max'>process and the solutions we can provide</h3>
+                            <h3 className='titlelight mx-auto md:text-[40px] text-[25px] font-bold text-white relative md:w-max'>process and the solutions we can provide</h3>
                         </div>
-                        <div className="title w-2/4 mx-auto text-center ">
+                        <div className="title md:w-2/4 mx-auto text-center ">
                             <h3 className='text-[30px] font-semibold'>what you can expect from our sustainability consultants</h3>
                         </div>
                     </div>

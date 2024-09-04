@@ -9,8 +9,8 @@ function Contact() {
         <>
             <section className="contact-from mt-10 lg:mt-36">
                 <div className="container">
-                    <div className="row lg:flex justify-between items-end text-center lg: text-left">
-                        <div className="calltoaction px-9 py-10  bg-[#00000090] rounded-3xl lg:w-[40%]">
+                    <div className="row xl:flex justify-between items-end text-center lg:text-left">
+                        <div className="calltoaction px-9 py-10  bg-[#00000090] rounded-3xl xl:w-[40%]">
                             <div className="mail-box flex items-center gap-5 mb-5">
                                 <div className="profile-img">
                                     <img src={Contactprofile} alt="" srcset="" />
@@ -39,7 +39,7 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="contact-form rounded-xl p-14 bg-[#00000090] mt-20 lg:w-[55%]">
+                        <div className="contact-form rounded-xl p-14 bg-[#00000090] mt-20 xl:w-[55%]">
                             <div className="title">
                                 <div className="title">
                                     <h2 className='text-white'>Inquiry Now</h2>
@@ -47,16 +47,16 @@ function Contact() {
                                 <p className='my-8 text-white'>Don't hesitate to leave us your phone number. We will contact you to discuss any inquiry you may have!!</p>
                             </div>
                             <div className="form">
-                                <div className="lg:flex items-center justify-between gap-10">
+                                <div className="xl:flex items-center justify-between 2xl:gap-10 xl:gap-6">
                                     <div className="name">
-                                        <input type="text" name="name" id="name" placeholder='Your Name' className='bg-white px-8 py-4 rounded-md w-full mb-10 lg:mb-10' />
+                                        <input type="text" name="name" id="name" placeholder='Your Name' className='bg-white px-8 py-4 rounded-md w-full mb-10 xl:mb-0 ' />
                                     </div>
                                     <div className="email">
-                                        <input type="email" name="email" id="email" placeholder='YOur Mail Address' className='bg-white px-8 py-4 rounded-md w-full' />
+                                        <input type="email" name="email" id="email" placeholder='Your Mail Address' className='bg-white px-8 py-4 rounded-md w-full mb-10 xl:mb-0' />
                                     </div>
                                 </div>
 
-                                <div className="inquiry mt-10 ">
+                                <div className="inquiry xl:mt-10 ">
                                     <textarea name="inquiry" placeholder='Inquiry' id="inquiry" rows="5" className='bg-white px-8 py-4 rounded-md w-full'></textarea>
                                 </div>
                                 <div className="contact-btn">

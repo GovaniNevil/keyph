@@ -23,11 +23,11 @@ const Partner = () => {
     <>
         <section className="Partner" id='center-line'>
             <div className="subtitle center">
-                <h3 className='text-[45px] font-semibold text-[#0A6ED1] relative w-max mx-auto'>Welcome to Keyph Solar solution</h3>
+                <h3 className='md:text-[45px] text-[25px] font-semibold text-[#0A6ED1] relative w-max mx-auto mb-10'>Welcome to Keyph Solar solution</h3>
             </div>
-            <div className="gird-box py-32 px-40 bg-[#000000] items-center">
-                <div className="grid grid-cols-4 gap-10">
-                    <div className="col-span-4">
+            <div className="gird-box md:py-32 py-10 md:px-40 px-10 bg-[#000000] items-center">
+                <div className="grid md:grid-cols-4 grid-cols-2 gap-10">
+                    <div className="md:col-span-4 col-span-2">
                         <img src={Partner1} alt="" className='mx-auto w-96'/>
                     </div>
                     <div className="img-box flex items-center">

@@ -10,8 +10,8 @@ const Productdetails = () => {
                             <h3 className='titlelight mx-auto text-3xl font-bold text-[#0A6ED1] relative w-max'>OUR PRODUCTS</h3>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] py-14 px-24 bg-[#0A6ED1] mb-12">
-                        <div className="grid grid-cols-3 gap-7">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
+                        <div className="grid xl:grid-cols-3 gap-7">
                             <div className="content-box text-white">
                                 <div className="title">
                                     <h2>01</h2>
@@ -40,8 +40,8 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] py-14 px-24 bg-[#068B4A] mb-12">
-                        <div className="grid grid-cols-3 gap-7">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12">
+                        <div className="grid xl:grid-cols-3 gap-7">
                             <div className="content-box text-white">
                                 <div className="title">
                                     <h2>02</h2>
@@ -62,8 +62,8 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] py-14 px-24 bg-[#0A6ED1] mb-12">
-                        <div className="grid grid-cols-3 gap-7">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
+                        <div className="grid xl:grid-cols-3 gap-7">
                             <div className="content-box text-white">
                                 <div className="title">
                                     <h2>03</h2>
@@ -84,8 +84,8 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] py-14 px-24 bg-[#068B4A] mb-12">
-                        <div className="grid grid-cols-3 gap-7">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12">
+                        <div className="grid xl:grid-cols-3 gap-7">
                             <div className="content-box text-white">
                                 <div className="title">
                                     <h2>04</h2>
@@ -106,8 +106,8 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] py-14 px-24 bg-[#0A6ED1] mb-12">
-                        <div className="grid grid-cols-3 gap-7">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
+                        <div className="grid xl:grid-cols-3 gap-7">
                             <div className="content-box text-white">
                                 <div className="title">
                                     <h2>05</h2>

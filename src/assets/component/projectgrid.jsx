@@ -16,8 +16,8 @@ const Projectgrid = () => {
     <>
         <section className="projectgrid">
             <div className="container">
-                <div className="grid grid-cols-6 gap-5">
-                    <div className="col-span-6 row-span-1 bg-slate-400 rounded-2xl">video</div>
+                <div className="grid lg:grid-cols-6 grid-cols-4 gap-5">
+                    <div className="lg:col-span-6 col-span-4 row-span-1 bg-slate-400 rounded-2xl">video</div>
                     <div className="img-box col-span-2 bg-slate-400 rounded-2xl">
                         <img src={Project1} alt="" />
                     </div>
@@ -30,7 +30,7 @@ const Projectgrid = () => {
                     <div className="img-box col-span-2 row-span-2 bg-slate-400 rounded-2xl">
                     <video src={Video1} muted autoPlay loop className='rounded-2xl'></video>
                     </div>
-                    <div className="img-box col-span-4 bg-slate-400 rounded-2xl">
+                    <div className="img-box lg:col-span-4 col-span-2 bg-slate-400 rounded-2xl">
                         <img src={Project5} alt="" className='w-full h-[400px]'/>
                     </div>
                     <div className="img-box col-span-4 bg-slate-400 rounded-2xl">
@@ -39,10 +39,10 @@ const Projectgrid = () => {
                     <div className="video-box col-span-4 bg-slate-400 rounded-2xl">
                         video
                     </div>
-                    <div className="im-box col-span-2 bg-slate-400 rounded-2xl">
+                    <div className="im-box lg:col-span-2 hidden lg:block bg-slate-400 rounded-2xl">
                         <img src={Project7} alt="" />
                     </div>
-                    <div className="im-box col-span-6 bg-slate-400 rounded-2xl">
+                    <div className="im-box lg:col-span-6 col-span-4 bg-slate-400 rounded-2xl">
                         <img src={Project8} alt="" />
                     </div>
                     <div className="video-box col-span-2 bg-slate-400 rounded-2xl">
@@ -51,7 +51,7 @@ const Projectgrid = () => {
                     <div className="im-box col-span-4 bg-slate-400 rounded-2xl">
                         <img src={Project9} alt="" />
                     </div>
-                    <div className="im-box col-span-6 bg-slate-400 rounded-2xl">
+                    <div className="im-box lg:col-span-6 col-span-4 bg-slate-400 rounded-2xl">
                         <img src={Project10} alt="" />
                     </div>
                     {/* <div className="im-box col-span-3 row-span-2 bg-slate-400 rounded-2xl">
