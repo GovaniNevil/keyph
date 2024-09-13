@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Solutionimg from '../images/Our-solution.png'
 
-const Solution = () => {
+function Solution() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+            easing: 'ease-in-out',
+            offset: 200,
+            delay: 200,
+        });
+    },
+        []);
     return (
         <>
-            <section className='our-solution text-center lg:text-left'>
+            <section className='our-solution text-center lg:text-left' data-aos="fade-up">
                 <div className="container">
                     <div className="inner-box flex flex-col xl:flex-row gap-10 xl:gap-0 text-center xl:text-left">
                         <div className="title xl:w-[80%]">
@@ -18,8 +29,8 @@ const Solution = () => {
                                 <a href="#">Learn More</a>
                             </div> */}
                         </div>
-                        <div className="img">
-                            <img src={Solutionimg} alt="" className=''/>
+                        <div className="img" data-aos="fade-right">
+                            <img src={Solutionimg} alt="" className='' />
                         </div>
                     </div>
                     <div className="banner py-5 lg:py-[74px] px-8 lg:px-32 w-[100%] lg:-mt-[120px] hidden xl:block">

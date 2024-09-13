@@ -19,7 +19,6 @@ const Aboutus = () => {
         <Process />
         <Partner />
         <Vision />
-        <Contact/>
         <Footer/>
     </>
   )

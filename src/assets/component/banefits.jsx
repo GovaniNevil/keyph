@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import banefitsimg from '../images/banefits.png'
 
-const Banefits = () => {
+function Banefits() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
             <section className="banefits mb-8">
                 <div className="lg:container-fluid container text-center lg:text-left ">
                     <div className="row flex flex-col xl:flex-row items-center justify-between">
-                        <div className="img-box ">
+                        <div data-aos="flip-left" className="img-box ">
                             <img src={banefitsimg} alt="" />
                         </div>
-                        <div className="content-box xl:w-2/4 text-center">
+                        <div className="content-box xl:w-2/4 text-center lg:text-left">
                             <div className="title">
                                 <div className="subtitle">
                                     <h3 className='md:text-3xl text-[18px] mx-auto xl:mx-0 font-bold text-[#0A6ED1] relative w-max '>OUR SOLUTION</h3>

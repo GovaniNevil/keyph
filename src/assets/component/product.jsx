@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Boximg from '../images/product-img-1.png'
 import Product1 from '../images/product-square (1).png'
 import Product2 from '../images/product-square (2).png'
@@ -7,7 +9,13 @@ import Product4 from '../images/product-square (4).png'
 import Product5 from '../images/product-square (5).png'
 import Contactbtn from '../images/contact-us-icon.png'
 
-const Products = () => {
+function Products() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
             <section className='products py-12 lg:py-24 px-20 text-center lg:text-left lg:px-40' id='products'>
@@ -19,7 +27,7 @@ const Products = () => {
                 </div>
                 <div className="product-row mt-24">
                     <div className="grid xl:grid-cols-3 lg:grid-cols-2 gap-24 justify-center">
-                        <div className="box">
+                        <div data-aos="zoom-in" className="box">
                             <div className="img">
                                 <img src={Product1} alt="" className='mx-auto lg:mx-0'/>
                             </div>
@@ -36,7 +44,7 @@ const Products = () => {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div data-aos="zoom-in" className="box">
                             <div className="img">
                                 <img src={Product2} alt="" className='mx-auto lg:mx-0'/>
                             </div>
@@ -52,7 +60,7 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="box">
+                        <div data-aos="zoom-in" className="box">
                             <div className="img">
                                 <img src={Product3} alt="" className='mx-auto lg:mx-0'/>
                             </div>
@@ -68,7 +76,7 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="box">
+                        <div data-aos="zoom-in" className="box">
                             <div className="img">
                                 <img src={Product4} alt="" className='mx-auto lg:mx-0'/>
                             </div>
@@ -84,7 +92,7 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="box">
+                        <div data-aos="zoom-in" className="box">
                             <div className="img">
                                 <img src={Product5} alt="" className='mx-auto lg:mx-0'/>
                             </div>

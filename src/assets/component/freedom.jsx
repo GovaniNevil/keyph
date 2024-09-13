@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Freedomimg from '../images/freedom-solar.png'
 
-const Freedom = () => {
+function Freedom() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
             <section className="freedom text-center xl:text-left">
@@ -10,7 +18,7 @@ const Freedom = () => {
                         <div className="img">
                             <img src={Freedomimg} alt="" />
                         </div>
-                        <div className="content xl:absolute top-[10%] left-[15%] rounded-3xl xl:w-[50%] w-full bg-[#00133760] xl:p-8 p-5">
+                        <div data-aos="fade-up" className="content xl:absolute top-[10%] left-[15%] rounded-3xl xl:w-[50%] w-full bg-[#00133760] xl:p-8 p-5">
                             <div className="title ">
                                 <h5 className='text-[40px] font-bold text-white'>Experience the freedom of solar energy. </h5>
                             </div>

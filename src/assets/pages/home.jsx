@@ -21,7 +21,6 @@ const Home = () => {
       <Products />
       <Freedom />
       <Commitment />
-      <Contact/>
       <Footer/>
     </div>
   )

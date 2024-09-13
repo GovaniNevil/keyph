@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Contactbtn from '../images/contact-us-icon.png'
 import Contactprofile from '../images/profile.png'
 import Location from '../images/location.png'
 import Call from '../images/call.png'
 
 function Contact() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
             <section className="contact-from mt-10 lg:mt-36">
                 <div className="container">
                     <div className="row xl:flex justify-between items-end text-center lg:text-left">
-                        <div className="calltoaction px-9 py-10  bg-[#00000090] rounded-3xl xl:w-[40%]">
+                        <div data-aos="zoom-in-right" className="calltoaction px-9 py-10  bg-[#00000090] rounded-3xl xl:w-[40%]">
                             <div className="mail-box flex items-center gap-5 mb-5">
                                 <div className="profile-img">
                                     <img src={Contactprofile} alt="" srcset="" />
@@ -39,28 +47,88 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className="contact-form rounded-xl p-14 bg-[#00000090] mt-20 xl:w-[55%]">
-                            <div className="title">
+                        <div data-aos="zoom-in-left" className="contact-form rounded-xl p-14 bg-[#00000090] mt-20 xl:w-[55%]">
+                            {/* <div className="title">
                                 <div className="title">
                                     <h2 className='text-white'>Inquiry Now</h2>
                                 </div>
                                 <p className='my-8 text-white'>Don't hesitate to leave us your phone number. We will contact you to discuss any inquiry you may have!!</p>
-                            </div>
+                            </div> */}
                             <div className="form">
-                                <div className="xl:flex items-center justify-between 2xl:gap-10 xl:gap-6">
-                                    <div className="name">
-                                        <input type="text" name="name" id="name" placeholder='Your Name' className='bg-white px-8 py-4 rounded-md w-full mb-10 xl:mb-0 ' />
+                                <div className="flex items-center justify-center bg-opacity-50">
+                                    <div className="bg-white rounded-lg p-6 w-full max-w-xl mx-auto">
+                                        <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+                                        <form className="space-y-4">
+                                            <div className="flex flex-col md:flex-row gap-4">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Full Name"
+                                                    className="border border-gray-300 rounded-md p-2 w-full"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="WhatsApp number"
+                                                    className="border border-gray-300 rounded-md p-2 w-full"
+                                                    maxLength={10} // Add character limit
+                                                />
+                                            </div>
+                                            <div>
+                                                <h3>Monthly Electricity Bill *</h3>
+                                                <div class="flex flex-wrap gap-2">
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="less_than_1500" className="mr-1" />
+                                                        <label for="less_than_1500">Less than ₹1500</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="1500-2500" className="mr-1" />
+                                                        <label for="less_than_1500">₹1500 - ₹2500</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="2500-4000" className="mr-1" />
+                                                        <label for="less_than_1500">₹2500 - ₹4000</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="4000-8000" className="mr-1" />
+                                                        <label for="less_than_1500">₹4000 - ₹8000</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="more_than_8000" className="mr-1" />
+                                                        <label for="less_than_1500">
+                                                            More than ₹8000</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col md:flex-row gap-4">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Pin code"
+                                                    className="border border-gray-300 rounded-md p-2 w-full"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="City"
+                                                    className="border border-gray-300 rounded-md p-2 w-full"
+                                                />
+                                            </div>
+                                            <input
+                                                type="email"
+                                                placeholder="Email"
+                                                className="border border-gray-300 rounded-md p-2 w-full"
+                                            />
+                                            {/* <div className="flex items-center">
+                                                <input type="checkbox" id="agree" className="mr-2" />
+                                                <label htmlFor="agree" className="text-sm">
+                                                    I agree to keyph's <a href="#" className="text-blue-500">terms of service</a> & <a href="#" className="text-blue-500">privacy policy</a>
+                                                </label>
+                                            </div> */}
+                                            <button
+                                                type="submit"
+                                                className="bg-blue-500 text-white rounded-md px-4 py-2 w-full"
+                                            >
+                                                Yes! Reduce my electricity bill
+                                            </button>
+                                        </form>
                                     </div>
-                                    <div className="email">
-                                        <input type="email" name="email" id="email" placeholder='Your Mail Address' className='bg-white px-8 py-4 rounded-md w-full mb-10 xl:mb-0' />
-                                    </div>
-                                </div>
-
-                                <div className="inquiry xl:mt-10 ">
-                                    <textarea name="inquiry" placeholder='Inquiry' id="inquiry" rows="5" className='bg-white px-8 py-4 rounded-md w-full'></textarea>
-                                </div>
-                                <div className="contact-btn">
-                                    <a href="#" className='flex items-center gap-2 bg-[#0052B4] text-white px-6 py-2 mt-4 rounded-[30px] w-max mx-auto lg:mx-0'>Know More<sapn><img src={Contactbtn} alt="" /></sapn></a>
                                 </div>
                             </div>
                         </div>
