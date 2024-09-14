@@ -10,6 +10,7 @@ import Project8 from '../images/project  (8).png'
 import Project9 from '../images/project  (9).png'
 import Project10 from '../images/project  (10).png'
 import Video1 from '../images/video-1.mp4'
+import Video2 from '../images/anim-keyph.mp4'
 
 const Projectgrid = () => {
   return (
@@ -17,7 +18,9 @@ const Projectgrid = () => {
         <section className="projectgrid">
             <div className="container">
                 <div className="md:grid flex flex-col md:grid-cols-6 grid-cols-1 gap-5">
-                    <div className="lg:col-span-6 md:col-span-4 col-span-1 row-span-1 bg-slate-400 rounded-2xl">video</div>
+                    <div className="lg:col-span-6 md:col-span-4 col-span-1 row-span-1 bg-slate-400 rounded-2xl">
+                        <video src={Video2} muted autoPlay loop className='rounded-2xl w-full'></video>
+                    </div>
                     <div className="img-box md:col-span-2 col-span-1 bg-slate-400 rounded-2xl">
                         <img src={Project1} alt="" />
                     </div>
