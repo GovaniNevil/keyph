@@ -18,7 +18,7 @@ function Contact() {
             <section className="contact-from mt-10 lg:mt-36">
                 <div className="container">
                     <div className="row xl:flex justify-between items-end text-center lg:text-left">
-                        <div data-aos="zoom-in-right" className="calltoaction px-9 py-10  bg-[#00000090] rounded-3xl xl:w-[40%]">
+                        <div data-aos="zoom-in-right" className="calltoaction px-9 py-10  bg-white/30 backdrop-blur-lg rounded-3xl xl:w-[40%]">
                             <div className="mail-box flex items-center gap-5 mb-5">
                                 <div className="profile-img">
                                     <img src={Contactprofile} alt="" srcset="" />
@@ -47,7 +47,7 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div data-aos="zoom-in-left" className="contact-form rounded-xl p-14 bg-[#00000090] mt-20 xl:w-[55%]">
+                        <div data-aos="zoom-in-left" className="contact-form rounded-xl p-14  bg-black/30 backdrop-blur-lg mt-20 xl:w-[55%]">
                             {/* <div className="title">
                                 <div className="title">
                                     <h2 className='text-white'>Inquiry Now</h2>
@@ -56,9 +56,14 @@ function Contact() {
                             </div> */}
                             <div className="form">
                                 <div className="flex items-center justify-center bg-opacity-50">
-                                    <div className="bg-white rounded-lg p-6 w-full max-w-xl mx-auto">
+                                    <div className="rounded-lg w-full max-w-xl mx-auto">
                                         <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
                                         <form className="space-y-4">
+                                            <input
+                                                type="email"
+                                                placeholder="Email"
+                                                className="border border-gray-300 rounded-md p-2 w-full"
+                                            />
                                             <div className="flex flex-col md:flex-row gap-4">
                                                 <input
                                                     type="text"
@@ -72,36 +77,10 @@ function Contact() {
                                                     maxLength={10} // Add character limit
                                                 />
                                             </div>
-                                            <div>
-                                                <h3>Monthly Electricity Bill *</h3>
-                                                <div class="flex flex-wrap gap-2">
-                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
-                                                        <input type="radio" name="electricity_bill" value="less_than_1500" className="mr-1" />
-                                                        <label for="less_than_1500">Less than ₹1500</label>
-                                                    </div>
-                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
-                                                        <input type="radio" name="electricity_bill" value="1500-2500" className="mr-1" />
-                                                        <label for="less_than_1500">₹1500 - ₹2500</label>
-                                                    </div>
-                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
-                                                        <input type="radio" name="electricity_bill" value="2500-4000" className="mr-1" />
-                                                        <label for="less_than_1500">₹2500 - ₹4000</label>
-                                                    </div>
-                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
-                                                        <input type="radio" name="electricity_bill" value="4000-8000" className="mr-1" />
-                                                        <label for="less_than_1500">₹4000 - ₹8000</label>
-                                                    </div>
-                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
-                                                        <input type="radio" name="electricity_bill" value="more_than_8000" className="mr-1" />
-                                                        <label for="less_than_1500">
-                                                            More than ₹8000</label>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div className="flex flex-col md:flex-row gap-4">
                                                 <input
                                                     type="text"
-                                                    placeholder="Pin code"
+                                                    placeholder="Zip code"
                                                     className="border border-gray-300 rounded-md p-2 w-full"
                                                 />
                                                 <input
@@ -110,11 +89,34 @@ function Contact() {
                                                     className="border border-gray-300 rounded-md p-2 w-full"
                                                 />
                                             </div>
-                                            <input
-                                                type="email"
-                                                placeholder="Email"
-                                                className="border border-gray-300 rounded-md p-2 w-full"
-                                            />
+                                            <div>
+                                                <h3>Monthly Electricity Bill *</h3>
+                                                <div class="flex flex-wrap gap-2">
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="less_than_1500" className="mr-1 bg-white" />
+                                                        <label for="less_than_1500">Less than ₹1500</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="1500-2500" className="mr-1 bg-white" />
+                                                        <label for="less_than_1500">₹1500 - ₹2500</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="2500-4000" className="mr-1 bg-white" />
+                                                        <label for="less_than_1500">₹2500 - ₹4000</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="4000-8000" className="mr-1 bg-white" />
+                                                        <label for="less_than_1500">₹4000 - ₹8000</label>
+                                                    </div>
+                                                    <div className="border border-gray-300 rounded-md px-4 py-2 flex items-center">
+                                                        <input type="radio" name="electricity_bill" value="more_than_8000" className="mr-1 bg-white" />
+                                                        <label for="less_than_1500">
+                                                            More than ₹8000</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+
                                             {/* <div className="flex items-center">
                                                 <input type="checkbox" id="agree" className="mr-2" />
                                                 <label htmlFor="agree" className="text-sm">

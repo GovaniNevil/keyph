@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import About1 from '../images/about-us-1.png'
+import About2 from '../images/about-us-2.png'
+import About3 from '../images/about-us-3.png'
+import About4 from '../images/about-us-4.png'
+import About5 from '../images/about-us-5.png'
 
-const Whyus = () => {
+
+function Whyus() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
-            <section className="why-chooes-us bg-[#EAF4FF] py-7 md:py-24">
+            <section data-aos="zoom-in" className="why-chooes-us bg-[#EAF4FF] py-7 md:py-24">
                 <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
                         <div className="title">
@@ -12,16 +26,16 @@ const Whyus = () => {
                                 <p>Whether you're looking to switch to solar energy or upgrade your services, our sales and marketing company is here to help.</p>
                             </div>
                         </div>
-                        <div className="box p-9 rounded-2xl bg-white">
-                            <h3 className='text-3xl font-bold text-[#0A6ED1] relative '>01</h3>
+                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
+                            <img src={About1} alt=""  className='mb-4'/>
                             <div className="title">
                                 <h2>Expertise and Experience.</h2>
                             </div>
                             <p>Our team comprises of experienced professionals who are experts in renewable energy solutions.
                             </p>
                         </div>
-                        <div className="box p-9 rounded-2xl bg-white">
-                            <h3 className='text-3xl font-bold text-[#0A6ED1] relative '>02</h3>
+                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
+                        <img src={About2} alt="" className='mb-4'/>
                             <div className="title">
                                 <h2>Customer-Centric Approach</h2>
                             </div>
@@ -29,16 +43,16 @@ const Whyus = () => {
 
                             </p>
                         </div>
-                        <div className="box p-9 rounded-2xl bg-white">
-                            <h3 className='text-3xl font-bold text-[#0A6ED1] relative '>03</h3>
+                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
+                        <img src={About3} alt="" className='mb-4'/>
                             <div className="title">
                                 <h2>Personalized Approach</h2>
                             </div>
                             <p>We believe that every customer is unique, and their needs should be addressed accordingly
                             </p>
                         </div>
-                        <div className="box p-9 rounded-2xl bg-white">
-                            <h3 className='text-3xl font-bold text-[#0A6ED1] relative '>04</h3>
+                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
+                        <img src={About4} alt="" className='mb-4'/>
                             <div className="title">
                                 <h2>Cost
                                 Saving</h2>
@@ -46,8 +60,8 @@ const Whyus = () => {
                             <p>By leveraging our industry knowledge and network, we can help you save money on your solar and cable purchases
                             </p>
                         </div>
-                        <div className="box p-9 rounded-2xl bg-white">
-                            <h3 className='text-3xl font-bold text-[#0A6ED1] relative '>05</h3>
+                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
+                        <img src={About5} alt="" className='mb-4'/>
                             <div className="title">
                                 <h2>Advanced Technology</h2>
                             </div>

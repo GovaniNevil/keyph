@@ -73,9 +73,9 @@ function Header() {
           <li>
             <a href="/" className="text-white transition duration-200">Home</a>
           </li>
-          <li>
+          {/* <li>
             <a href="../pages/about-us.jsx" className="text-white transition duration-200">About Us</a>
-          </li>
+          </li> */}
           <li>
             <a href="../pages/services.jsx" className="text-white transition duration-200">Service</a>
           </li>
@@ -127,7 +127,7 @@ function Header() {
       {/* Contact Us Modal */}
       {/* Contact Us Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/10 backdrop-blur-lg p-4">
           <div className="bg-white rounded-lg p-6 w-full max-w-xl mx-auto relative">
             <h2 className="text-2xl font-bold mb-4 text-center">Contact Now </h2>
             <form className="space-y-4">
@@ -142,6 +142,23 @@ function Header() {
                   placeholder="WhatsApp number"
                   className="border border-gray-300 rounded-md p-2 w-full"
                   maxLength={10} // Add character limit
+                />
+              </div>
+              <input
+                type="email"
+                placeholder="Email"
+                className="border border-gray-300 rounded-md p-2 w-full"
+              />
+              <div className="flex flex-col md:flex-row gap-4">
+                <input
+                  type="text"
+                  placeholder="Pin code"
+                  className="border border-gray-300 rounded-md p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="City"
+                  className="border border-gray-300 rounded-md p-2 w-full"
                 />
               </div>
               <div>
@@ -170,23 +187,8 @@ function Header() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row gap-4">
-                <input
-                  type="text"
-                  placeholder="Pin code"
-                  className="border border-gray-300 rounded-md p-2 w-full"
-                />
-                <input
-                  type="text"
-                  placeholder="City"
-                  className="border border-gray-300 rounded-md p-2 w-full"
-                />
-              </div>
-              <input
-                type="email"
-                placeholder="Email"
-                className="border border-gray-300 rounded-md p-2 w-full"
-              />
+             
+              
               {/* <div className="flex items-center">
                 <input type="checkbox" id="agree" className="mr-2" />
                 <label htmlFor="agree" className="text-sm">

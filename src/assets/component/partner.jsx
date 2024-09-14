@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Partner1 from '../images/partner-logo.png'
 import Partner2 from '../images/partner-logo-2.png'
 import Partner3 from '../images/partner-logo-3.png'
@@ -18,16 +20,22 @@ import Partner16 from '../images/partner-logo-16.png'
 import Partner17 from '../images/partner-logo-17.png'
 
 
-const Partner = () => {
+function Partner() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
   return (
     <>
-        <section className="Partner" id='center-line'>
+        <section className="Partner mb-10" id='center-line'>
             <div className="subtitle center">
-                <h3 className='md:text-[45px] text-[25px] font-semibold text-[#0A6ED1] relative w-max mx-auto mb-10'>Welcome to Keyph Solar solution</h3>
+                <h3 className='md:text-[45px] text-[25px] font-semibold text-[#0A6ED1] relative w-max mx-auto mb-10'>Authorized channel partner and vendor</h3>
             </div>
-            <div className="gird-box md:py-32 py-10 md:px-40 px-10 bg-[#000000] items-center">
+            <div className="gird-box md:py-32 py-10 md:px-40 px-10 bg-[#000000] items-center" >
                 <div className="grid md:grid-cols-4 grid-cols-2 gap-10">
-                    <div className="md:col-span-4 col-span-2">
+                    <div className="md:col-span-4 col-span-2" data-aos="">
                         <img src={Partner1} alt="" className='mx-auto w-96'/>
                     </div>
                     <div className="img-box flex items-center">

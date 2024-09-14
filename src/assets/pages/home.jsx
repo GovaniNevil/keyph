@@ -1,13 +1,14 @@
 import React from 'react'
 import Header from '../component/header'
 import Video from '../component/video'
-import About from '../component/about'
 import Solution from '../component/solution'
+import Aboutintro from '../component/aboutintro'
+import Whyus from '../component/whyus'
+import Vision from '../component/vision'
+import Process from '../component/process'
+import Partner from '../component/partner'
 import Banefits from '../component/banefits'
-import Products from '../component/product'
 import Freedom from '../component/freedom'
-import Commitment from '../component/commitment'
-import Contact from '../component/contact'
 import Footer from '../component/footer'
 
 const Home = () => {
@@ -15,13 +16,15 @@ const Home = () => {
     <div>
       <Header />
       <Video />
-      <About />
+      <Aboutintro />
+      <Whyus />
+      <Process />
+      <Partner />
+      <Vision />
       <Solution />
       <Banefits />
-      <Products />
       <Freedom />
-      <Commitment />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

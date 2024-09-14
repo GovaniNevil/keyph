@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import FullService from '../images/service-detail-1.png'
 import HalfService from '../images/service-detail-2.png'
 import Ongrid from '../images/on-grid.png'
+import Offgrid from '../images/off-grid.png'
+import Hybridsolution from '../images/hybrid-solution.png'
 import Panelcleaning from '../images/pannel-cleaning.png'
 import Mechanical from '../images/electrical-menegment.png'
 import Monitering from '../images/monitaring.png'
@@ -9,14 +13,20 @@ import Easy from '../images/easy-solution.png'
 import AMC from '../images/amc-service.png'
 
  
-const Servicedetail = () => {
+function Servicedetail() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
             <section className="service-detail my-16">
                 <div className="container">
                     <div className="box">
                         <div className="img">
-                            <img src={Ongrid} alt="" />
+                            <img src={Ongrid} alt="" className='w-[80%] mx-auto' data-aos="flip-down"/>
                         </div>
                         <div className="content text-center md:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
@@ -30,7 +40,7 @@ const Servicedetail = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src={FullService} alt="" />
+                            <img src={Offgrid} alt="" className='w-[80%] mx-auto' data-aos="flip-down"/>
                         </div>
                         <div className="content text-center md:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
@@ -46,7 +56,7 @@ const Servicedetail = () => {
                     </div>
                     <div className="box">
                         <div className="img">
-                            <img src={FullService} alt="" />
+                            <img src={Hybridsolution} alt="" className='w-[80%] mx-auto' data-aos="flip-down"/>
                         </div>
                         <div className="content text-center md:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">

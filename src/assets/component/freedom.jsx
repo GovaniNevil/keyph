@@ -18,7 +18,7 @@ function Freedom() {
                         <div className="img">
                             <img src={Freedomimg} alt="" />
                         </div>
-                        <div data-aos="fade-up" className="content xl:absolute top-[10%] left-[15%] rounded-3xl xl:w-[50%] w-full bg-[#00133760] xl:p-8 p-5">
+                        <div data-aos="fade-up" className="content xl:absolute top-[10%] left-[15%] rounded-3xl xl:w-[50%] w-full bg-black/30 backdrop-blur-lg xl:p-8 p-5">
                             <div className="title ">
                                 <h5 className='text-[40px] font-bold text-white'>Experience the freedom of solar energy. </h5>
                             </div>

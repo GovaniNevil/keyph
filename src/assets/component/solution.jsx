@@ -15,7 +15,7 @@ function Solution() {
         []);
     return (
         <>
-            <section className='our-solution text-center lg:text-left' data-aos="fade-up">
+            <section className='our-solution text-center lg:text-left mt-10' data-aos="fade-up">
                 <div className="container">
                     <div className="inner-box flex flex-col xl:flex-row gap-10 xl:gap-0 text-center xl:text-left">
                         <div className="title xl:w-[80%]">

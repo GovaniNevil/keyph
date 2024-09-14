@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Icon1 from '../images/icon1.png'
 import Icon2 from '../images/icon2.png'
 import Icon3 from '../images/icon3.png'
@@ -7,7 +9,13 @@ import Icon5 from '../images/icon5.png'
 import Icon6 from '../images/icon6.png'
 import Icon7 from '../images/icon7.png'
 
-const Serviceoption = () => {
+function Serviceoption() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
   return (
     <>
         <section className="service-option">
@@ -15,7 +23,7 @@ const Serviceoption = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-12">
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon1} alt=""  className='mx-auto md:mx-0'/>
+                            <img src={Icon1} alt=""  className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>On Grid</h3>
@@ -24,7 +32,7 @@ const Serviceoption = () => {
                     </div>
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon2} alt="" className='mx-auto md:mx-0'/>
+                            <img src={Icon2} alt="" className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>Off Grid</h3>
@@ -33,7 +41,7 @@ const Serviceoption = () => {
                     </div>
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon3} alt="" className='mx-auto md:mx-0'/>
+                            <img src={Icon3} alt="" className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>Hybrid Solar</h3>
@@ -42,7 +50,7 @@ const Serviceoption = () => {
                     </div>
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon4} alt="" className='mx-auto md:mx-0'/>
+                            <img src={Icon4} alt="" className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>Panel cleaning</h3>
@@ -51,7 +59,7 @@ const Serviceoption = () => {
                     </div>
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon5} alt="" className='mx-auto md:mx-0'/>
+                            <img src={Icon5} alt="" className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>Mechanical & electrical health check</h3>
@@ -60,7 +68,7 @@ const Serviceoption = () => {
                     </div>
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon6} alt="" className='mx-auto md:mx-0'/>
+                            <img src={Icon6} alt="" className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>Monitoring performance</h3>
@@ -69,7 +77,7 @@ const Serviceoption = () => {
                     </div>
                     <div className="box p-4 md:p-8 text-center md:text-left">
                         <div className="icon">
-                            <img src={Icon7} alt="" className='mx-auto md:mx-0'/>
+                            <img src={Icon7} alt="" className='mx-auto md:mx-0' data-aos="flip-left"/>
                         </div>
                         <div className="title">
                             <h3 className='font-bold text-[24px] my-4'>Quick, Easy & Affordable Financing Options</h3>
