@@ -1,22 +1,30 @@
-import React from 'react'
-import Productimg1 from '../images/product-details- (1).png'
-import Productimg2 from '../images/product-details- (2).png'
-import Productimg3 from '../images/product-details- (3).png'
-import Productimg4 from '../images/product-details- (4).png'
-import Productimg5 from '../images/product-details- (5).png'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Productimg1 from '../images/product-details- (2).png'
+import Productimg2 from '../images/product-details- (3).png'
+import Productimg3 from '../images/product-details- (4).png'
+import Productimg4 from '../images/product-details- (5).png'
+import Productimg5 from '../images/product-details- (1).png'
 
 
 const Productdetails = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1200, // Animation duration in milliseconds
+        });
+    },
+        []);
     return (
         <>
-            <section className="product-details" id='center-line'>
+            <section className="product-details overflow-x-hidden" id='center-line'>
                 <div className="container">
                     <div className="title mb-11">
                         <div className="subtitle">
                             <h3 className='titlelight mx-auto text-3xl font-bold text-[#0A6ED1] relative w-max'>OUR PRODUCTS</h3>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-6 bg-[#0A6ED1] mb-12">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-6 bg-[#0A6ED1] mb-12" data-aos="fade-right">
                         <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
                             <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
@@ -33,7 +41,7 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12" data-aos="fade-left">
                         <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
                             <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
@@ -50,7 +58,7 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12" data-aos="fade-right">
                         <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
                             <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
@@ -67,7 +75,7 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#068B4A] mb-12" data-aos="fade-left">
                         <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
                             <div className="content-box text-center md:text-left text-white">
                                 <div className="title">
@@ -84,7 +92,7 @@ const Productdetails = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12">
+                    <div className="porduct-box rounded-[30px] md:py-14 py-7 md:px-24 px-12 bg-[#0A6ED1] mb-12" data-aos="fade-right">
                         <div className="grid xl:grid-cols-3 gap-y-5 md:gap-7">
                             <div className="content-box text-center md:text-left text-white">
                                 <div className="title">

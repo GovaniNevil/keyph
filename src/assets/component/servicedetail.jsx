@@ -24,11 +24,11 @@ function Servicedetail() {
         <>
             <section className="service-detail my-16">
                 <div className="container">
-                    <div className="box">
-                        <div className="img">
-                            <img src={Ongrid} alt="" className='w-[80%] mx-auto' data-aos="flip-down"/>
+                    <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
+                        <div className="img lg:w-1/2">
+                            <img src={Ongrid} alt="" className='mx-auto' data-aos="flip-down" data-aos-delay="100"/>
                         </div>
-                        <div className="content text-center md:text-left">
+                        <div className="content lg:w-1/2 text-center lg:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>On Grid</h2>
                             </div>
@@ -38,11 +38,8 @@ function Servicedetail() {
                             <p className='mb-4'>An on-grid system is designed to first allow solar energy to be consumed by the customer. Beyond this, if the customer needs any excess power, it is drawn from the grid. If the customer’s energy requirement is lower than power generated from the solar system, excess solar units are exported to the grid. This is possible through a “Net-meter”. The Net meter is provided by the electricity board, Net meter calculates how many units has your solar system generated and transmitted to the electricity board and  also how many units have been consumed from the electricity board. Mandatory requirements are the  need to check the sanction load mentioned on the electricity bill , get feasibility certificate & net Metering permission from the electricity board.</p>
                         </div>
                     </div>
-                    <div className="box">
-                        <div className="img">
-                            <img src={Offgrid} alt="" className='w-[80%] mx-auto' data-aos="flip-down"/>
-                        </div>
-                        <div className="content text-center md:text-left">
+                    <div className="box flex flex-col-reverse lg:flex-row items-center md:mt-20 mt-10 md:gap-11 gap-4"> 
+                        <div className="content lg:w-1/2 text-center lg:text-left">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>Off Grid</h2>
                             </div>
@@ -53,12 +50,15 @@ function Servicedetail() {
                             <p className='mb-4'>An alternative to off-grid solar systems is a hybrid system, which remains tied to the grid but includes a solar battery bank to store excess energy.
                             </p>
                         </div>
-                    </div>
-                    <div className="box">
-                        <div className="img">
-                            <img src={Hybridsolution} alt="" className='w-[80%] mx-auto' data-aos="flip-down"/>
+                        <div className="img lg:w-1/2">
+                            <img src={Offgrid} alt="" className='mx-auto' data-aos="flip-down" data-aos-delay="100"/>
                         </div>
-                        <div className="content text-center md:text-left">
+                    </div>
+                    <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
+                        <div className="lg:w-1/2 img">
+                            <img src={Hybridsolution} alt="" className=' mx-auto' data-aos="flip-down" data-aos-delay="100"/>
+                        </div>
+                        <div className="content lg:w-1/2">
                             <div className="title md:mt-9 mt-4 md:mb-4 mb-2">
                                 <h2 className='text-[#0A6ED1] font-bold'>Hybrid Solar</h2>
                             </div>
@@ -77,12 +77,12 @@ function Servicedetail() {
                             </p>
                         </div>
                         <div className="img ">
-                            <img src={Panelcleaning} alt="" />
+                            <img src={Panelcleaning} alt="" data-aos="flip-down" data-aos-delay="100"/>
                         </div>
                     </div>
                     <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="img ">
-                            <img src={Mechanical} alt="" />
+                            <img src={Mechanical} alt="" data-aos="flip-down" data-aos-delay="100"/>
                         </div>
                         <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
@@ -92,7 +92,6 @@ function Servicedetail() {
                             <p className='mb-4'>To ensure the longevity and reliability of your solar system, it’s crucial to perform regular mechanical and electrical health checks. Our team of experts will inspect all components of your solar setup, including wiring, connections, and mechanical parts, to identify and address any issues before they become significant problems. This proactive approach helps maintain the system's efficiency and safety
                             </p>
                         </div>
-
                     </div>
                     <div className="box flex flex-col-reverse lg:flex-row items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="content lg:w-2/4 text-center lg:text-left">
@@ -104,12 +103,12 @@ function Servicedetail() {
                             </p>
                         </div>
                         <div className="img ">
-                            <img src={Monitering} alt="" />
+                            <img src={Monitering} alt="" data-aos="flip-down" data-aos-delay="100"/>
                         </div>
                     </div>
                     <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
                         <div className="img ">
-                            <img src={Easy} alt="" />
+                            <img src={Easy} alt="" data-aos="flip-down" data-aos-delay="100"/>
                         </div>
                         <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
@@ -136,7 +135,7 @@ function Servicedetail() {
                             </p>
                         </div>
                         <div className="img ">
-                            <img src={AMC} alt="" />
+                            <img src={AMC} alt="" data-aos="flip-down" data-aos-delay="100"/>
                         </div>
                     </div>
                 </div>

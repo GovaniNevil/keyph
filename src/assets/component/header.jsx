@@ -27,12 +27,12 @@ function Header() {
           <ul>
             <li className="inline-block mr-5">
               <a href="tel:+919892679540" className="flex gap-2 items-center">
-                <span className="text-xl"><IoIosCall /></span>+919892679540
+                <span className="text-2xl"><IoIosCall /></span>+919892679540
               </a>
             </li>
             <li className="inline-block">
               <a href="tel:+917304933751" className="flex gap-2 items-center">
-                <span className="text-xl"><IoIosCall /></span>+917304933751
+                <span className="text-2xl"><IoIosCall /></span>+917304933751
               </a>
             </li>
           </ul>
@@ -41,12 +41,12 @@ function Header() {
           <ul>
             <li className="inline-block mr-5">
               <a href="mailto:contact@keyphsolar.com" className="flex gap-2 items-center">
-                <span className="text-xl"><CiMail /></span>contact@keyphsolar.com
+                <span className="text-2xl"><CiMail /></span>contact@keyphsolar.com
               </a>
             </li>
             <li className="inline-block">
               <a href="#" className="flex gap-2 items-center">
-                <span className="text-xl"><FaFile /></span> Download Profile
+                <span className="text-2xl"><FaFile /></span> Download Profile
               </a>
             </li>
           </ul>
@@ -64,12 +64,12 @@ function Header() {
           />
           {/* Logo */}
           <a href="/">
-            <img src={Logo} alt="Your Logo" className="h-16 md:h-20 w-auto ml-4 md:ml-0" />
+            <img src={Logo} alt="Your Logo" className="h-16 md:h-28 w-auto ml-4 md:ml-0" />
           </a>
         </div>
 
         {/* Navigation Links (Large Screen) */}
-        <ul className="hidden lg:flex space-x-12 lg:space-x-8 text-[18px] font-bold text-white">
+        <ul className="hidden lg:flex space-x-12 lg:space-x-8 text-[20px] font-bold text-white">
           <li>
             <a href="/" className="text-white transition duration-200">Home</a>
           </li>

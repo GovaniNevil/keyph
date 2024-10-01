@@ -31,7 +31,7 @@ function Partner() {
     <>
         <section className="Partner mb-10" id='center-line'>
             <div className="subtitle center">
-                <h3 className='md:text-[45px] text-[25px] font-semibold text-[#0A6ED1] relative w-max mx-auto mb-10'>Authorized channel partner and vendor</h3>
+                <h3 className='md:text-[45px] text-[25px] font-semibold text-[#0A6ED1] relative w-max mx-auto mb-10'>Our Pride Associates</h3>
             </div>
             <div className="gird-box md:py-32 py-10 md:px-40 px-10 bg-[#000000] items-center" >
                 <div className="grid md:grid-cols-4 grid-cols-2 gap-10">

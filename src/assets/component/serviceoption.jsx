@@ -85,12 +85,12 @@ function Serviceoption() {
                         <p>Access hassle-free, budget-friendly financing for your solar system installation</p>
                     </div>
                     <div className="box p-8  bg-[#0A6ED1] rounded-3xl text-center text-white">
-                        <div className="title md:mt-14">
+                        <div className="title md:mt-14 mb-5">
                             <h3 className='font-bold text-3xl'>More service?</h3>
                         </div>
-                        <p className='mb-4'>You can tell us what you need and we can help! </p>
+                        <p className='mb-6'>You can tell us what you need and we can help! </p>
                         <div className="btn">
-                            <a href="#" className='rounded-[30px] text-[20px] fomt-bold inlineblock px-10 py-3 text-[#0A6ED1] bg-white'>Call Us Now</a>
+                            <a href="tel:+917304933751" className='rounded-[30px] text-[20px] fomt-bold inlineblock px-10 py-3 text-[#0A6ED1] bg-white'>Call Us Now</a>
                         </div>
                     </div>
                 </div>

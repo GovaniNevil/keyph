@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import About1 from '../images/about-us-1.png'
@@ -23,19 +24,20 @@ function Whyus() {
                         <div className="title">
                             <div className="">
                                 <h3 className='xl:text-[60px] md:text-[50px] text-[35px] font-bold text-[#0A6ED1] relative w-[80%] '>Why Choose Us?</h3>
-                                <p>Whether you're looking to switch to solar energy or upgrade your services, our sales and marketing company is here to help.</p>
+                                <p className='mb-6'>Whether you're looking to switch to solar energy or upgrade your services, our sales and marketing company is here to help.</p>
+                                <Link to="/pages/company.jsx" className='px-6 py-3 bg-[#0A6ED1] rounded-md text-white'>Learn More</Link>
                             </div>
                         </div>
-                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
-                            <img src={About1} alt=""  className='mb-4'/>
+                        <div data-aos="flip-left" data-aos-delay="200" className="box p-9 rounded-2xl bg-white">
+                            <img src={About1} alt="" className='mb-4' />
                             <div className="title">
                                 <h2>Expertise and Experience.</h2>
                             </div>
                             <p>Our team comprises of experienced professionals who are experts in renewable energy solutions.
                             </p>
                         </div>
-                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
-                        <img src={About2} alt="" className='mb-4'/>
+                        <div data-aos="flip-left" data-aos-delay="200" className="box p-9 rounded-2xl bg-white">
+                            <img src={About2} alt="" className='mb-4' />
                             <div className="title">
                                 <h2>Customer-Centric Approach</h2>
                             </div>
@@ -43,25 +45,25 @@ function Whyus() {
 
                             </p>
                         </div>
-                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
-                        <img src={About3} alt="" className='mb-4'/>
+                        <div data-aos="flip-left" data-aos-delay="200" className="box p-9 rounded-2xl bg-white">
+                            <img src={About3} alt="" className='mb-4' />
                             <div className="title">
                                 <h2>Personalized Approach</h2>
                             </div>
                             <p>We believe that every customer is unique, and their needs should be addressed accordingly
                             </p>
                         </div>
-                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
-                        <img src={About4} alt="" className='mb-4'/>
+                        <div data-aos="flip-left" data-aos-delay="200" className="box p-9 rounded-2xl bg-white">
+                            <img src={About4} alt="" className='mb-4' />
                             <div className="title">
                                 <h2>Cost
-                                Saving</h2>
+                                    Saving</h2>
                             </div>
                             <p>By leveraging our industry knowledge and network, we can help you save money on your solar and cable purchases
                             </p>
                         </div>
-                        <div data-aos="flip-left" className="box p-9 rounded-2xl bg-white">
-                        <img src={About5} alt="" className='mb-4'/>
+                        <div data-aos="flip-left" data-aos-delay="200" className="box p-9 rounded-2xl bg-white">
+                            <img src={About5} alt="" className='mb-4' />
                             <div className="title">
                                 <h2>Advanced Technology</h2>
                             </div>

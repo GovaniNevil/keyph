@@ -18,13 +18,11 @@ const Home = () => {
       <Video />
       <Aboutintro />
       <Whyus />
-      <Process />
       <Partner />
       <Vision />
-      <Solution />
-      <Banefits />
-      <Freedom />
+      <Process />
       <Footer />
+
     </div>
   )
 }

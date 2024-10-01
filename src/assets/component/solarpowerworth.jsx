@@ -25,8 +25,8 @@ const Solarpowerworth = () => {
                             </div>
                             <div className="list">
                                 <ul>
-                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Reduce Bills</span></li>
-                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Low Maintenance</span></li>
+                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Cut Down on Utility Bills</span></li>
+                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Effortless Maintenance</span></li>
                                     <li className='flex justify-center md:justify-normal gap-4'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>25 Year Panel Warranty</span></li>
                                 </ul>
                             </div>
@@ -40,8 +40,8 @@ const Solarpowerworth = () => {
                             </div>
                             <div className="list">
                                 <ul>
-                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Whitecheck} alt="" /><span className='text-white'>Reduce Bills</span></li>
-                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Whitecheck} alt="" /><span className='text-white'>Low Maintenance</span></li>
+                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Whitecheck} alt="" /><span className='text-white'>Slash Business Overheads</span></li>
+                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Whitecheck} alt="" /><span className='text-white'>Reliable & Efficient</span></li>
                                     <li className='flex justify-center md:justify-normal gap-4'><img src={Whitecheck} alt="" /><span className='text-white'>25 Year Panel Warranty</span></li>
                                 </ul>
                             </div>
@@ -55,8 +55,8 @@ const Solarpowerworth = () => {
                             </div>
                             <div className="list">
                                 <ul>
-                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Reduce Bills</span></li>
-                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Low Maintenance</span></li>
+                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Reduce Operating Costs</span></li>
+                                    <li className='flex justify-center md:justify-normal gap-4 mb-2'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>Durable & Low Maintenance</span></li>
                                     <li className='flex justify-center md:justify-normal gap-4'><img src={Bluecheck} alt="" /><span className='text-[#666666]'>25 Year Panel Warranty</span></li>
                                 </ul>
                             </div>

@@ -27,7 +27,7 @@ function Contact() {
                                     <div className="title">
                                         <h3 className='text-white text-[30px]'>Keyph Solar Solution</h3>
                                     </div>
-                                    <a href="mailto:kpsolarsolution@gmail.com">kpsolarsolution@gmail.com</a>
+                                    <a href="mailto:contact@keyphsolar.com">contact@keyphsolar.com</a>
                                 </div>
                             </div>
                             <div className="mail-box flex items-center gap-5 mb-5">
@@ -35,7 +35,8 @@ function Contact() {
                                     <img src={Call} alt="" srcset="" />
                                 </div>
                                 <div className="content text-white">
-                                    <a href="tel:+917304933751">+91 73049 33751</a>
+                                    <a href="tel:+917304933751">+91 73049 33751</a><br></br>
+                                    <a href="tel:+919892679540">+91 98926 79540</a>
                                 </div>
                             </div>
                             <div className="mail-box flex items-center gap-5">

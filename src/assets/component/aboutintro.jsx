@@ -24,7 +24,7 @@ function Aboutintro() {
                                     <h2>We exist to empower individuals and business to embrace solar energy.</h2>
                                 </div>
                             </div>
-                            <div className="content">
+                            <div className="content text-[22px]">
                                 
                                 <p className='mb-2'>KeyPh Solar Solutions Pvt Ltd is incorporated with the idea of providing non-polluting renewable energy to all. We strongly believe that every responsible and committed individual, as well as corporate body who strives to minimize their carbon footprint should have access to cost-effective, high quality and high performance renewable solutions.</p>
                                 <p className='mb-2'>KPSS is an energy consultant and Engineering, Procurement and Construction (EPC) solutions provider for residential, commercial and industrial power. We understand our customers' energy consumption patterns and work out economically viable options to switch to renewable energy solutions. Our team of experts bring together years of experience with renewable energy technologies and are passionately dedicated to providing sustainable energy solutions.</p>
@@ -33,7 +33,7 @@ function Aboutintro() {
                                 
                             </div>
                         </div>
-                        <div className="img-box xl:w-[40%] mx-auto xl:mx-0" data-aos="flip-right">
+                        <div className="img-box xl:w-[40%] mx-auto xl:mx-0" data-aos="flip-right" data-aos-easing="ease-in-back" data-aos-delay="100">
                             <img src={Introabout} alt="" />
                         </div>
                     </div>
