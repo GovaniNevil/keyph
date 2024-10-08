@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import About1 from '../images/about-us-1.png'
 import About2 from '../images/about-us-2.png'
 import About3 from '../images/about-us-3.png'
-import About4 from '../images/about-us-4.png'
+import About4 from '../images/DALL·E 2024-10-08 12.45.12 - An image representing cost savings with solar energy. It shows a bright,.webp'
 import About5 from '../images/about-us-5.png'
 
 
@@ -54,7 +54,7 @@ function Whyus() {
                             </p>
                         </div>
                         <div data-aos="flip-left" data-aos-delay="200" className="box p-9 rounded-2xl bg-white">
-                            <img src={About4} alt="" className='mb-4' />
+                            <img src={About4} alt="" className='mb-4 w-full h-[180px] rounded-[20px] '  />
                             <div className="title">
                                 <h2>Cost
                                     Saving</h2>

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Mission from '../images/target.png'
-import Visionimg from '../images/vision.png'
+import Mission from '../images/Mission.webp'
+import Visionimg from '../images/Vision.webp'
 
 function Vision() {
     useEffect(() => {
@@ -13,38 +13,52 @@ function Vision() {
         []);
     return (
         <>
-            <section className="vision my-36">
-                <div className="container">
-                    <div className="mission-box border border-[#0A6ED1] rounded-2xl px-6 md:px-20 py-6 flex flex-col-reverse md:flex-row items-center gap-3 md:gap-5 mb-24 text-center md:text-left" data-aos="fade-right">
-                        <div className="content-box">
-                            <div className="title font-bold">
-                                <h2>OUR MISSION</h2>
+            <section className="vision my-36 bg-gradient-to-b from-blue-50 to-white py-20">
+                <div className="container mx-auto px-8 lg:px-16">
+                    <div className="flex gap-16 md:gap-20">
+                        {/* Mission Section */}
+                        <div className="mission-box relative bg-white rounded-3xl shadow-lg border-t-4 border-[#0A6ED1] px-10 py-12 hover:scale-105 transform transition-all duration-300 group" data-aos="fade-up">
+                            <div className="flex flex-col items-center gap-6">
+                                <div className="img-container lg:w-full lg:h-[310px] md:w-32 md:h-32 rounded-[30px] overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+                                    <img src={Mission} alt="Mission" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="content-box text-center">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4 flex items-center justify-center gap-2">
+                                        <span className="text-2xl transform group-hover:rotate-12 transition-transform duration-300">🌞</span> OUR MISSION
+                                    </h2>
+                                    <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+                                        We strive to be a leader in the global solar industry, pioneering sustainable energy innovations and pushing the boundaries of solar technology to build a greener, brighter future.
+                                    </p>
+                                </div>
                             </div>
-                            <p>
-                                OUR MISSION  To become a leading global solar company, delivering state-of-the-art  sustainable energy solutions, recognized for innovation,  excellence, and commitment to creating a greener future, pushing solar technology boundaries
-                            </p>
-                        </div>
-                        <div className="img">
-                            <img src={Mission} alt="" />
-                        </div>
-                    </div>
-                    <div className="mission-box border border-[#0A6ED1] rounded-2xl px-6 md:px-20 py-6 flex flex-col md:flex-row items-center gap-3 md:gap-5 text-center md:text-left" data-aos="fade-right">
-                        <div className="img">
-                            <img src={Visionimg} alt="" />
-                        </div>
-                        <div className="content-box">
-                            <div className="title font-bold">
-                                <h2>OUR VISION</h2>
-                            </div>
-                            <p>
-                            To build strong relationships based on trust, integrity, and mutual respect, delivering exceptional value to customers, driving solar energy transformation, and reducing reliance on fossil fuels to create
-                            a sustainable future.                            </p>
                         </div>
 
+                        {/* Vision Section */}
+                        <div className="vision-box relative bg-white rounded-3xl shadow-lg border-t-4 border-[#0A6ED1] px-10 py-12 hover:scale-105 transform transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                            <div className="flex flex-col items-center gap-6">
+                                <div className="img-container  lg:w-full lg:h-[310px] md:w-32 md:h-32 rounded-[30px] overflow-hidden shadow-md transition-transform duration-300 transform hover:scale-105">
+                                    <img src={Visionimg} alt="Vision" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="content-box text-center">
+                                    <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4 flex items-center justify-center gap-2">
+                                        <span className="text-2xl transform group-hover:rotate-12 transition-transform duration-300">🌍</span> OUR VISION
+                                    </h2>
+                                    <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+                                        Our vision is to create sustainable change by building trust and transforming the energy landscape, advancing the shift to clean solar power, and reducing fossil fuel dependence for a sustainable future.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </section>
+
+
+
+
+
+
+
         </>
     )
 }

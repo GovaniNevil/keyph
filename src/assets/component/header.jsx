@@ -12,6 +12,14 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const downloadFile = () => {
+    const link = document.createElement('a');
+    link.href = '../images/keyph company profile.pdf';
+    link.setAttribute('download', 'keyph_company_profile.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -27,12 +35,12 @@ function Header() {
           <ul>
             <li className="inline-block mr-5">
               <a href="tel:+919892679540" className="flex gap-2 items-center">
-                <span className="text-2xl"><IoIosCall /></span>+919892679540
+                <span className="text-2xl"><IoIosCall /></span>Poonam:- +919892679540
               </a>
             </li>
             <li className="inline-block">
               <a href="tel:+917304933751" className="flex gap-2 items-center">
-                <span className="text-2xl"><IoIosCall /></span>+917304933751
+                <span className="text-2xl"><IoIosCall /></span>Karn:- +917304933751
               </a>
             </li>
           </ul>
@@ -41,14 +49,21 @@ function Header() {
           <ul>
             <li className="inline-block mr-5">
               <a href="mailto:contact@keyphsolar.com" className="flex gap-2 items-center">
-                <span className="text-2xl"><CiMail /></span>contact@keyphsolar.com
+                <span className="text-2xl"><CiMail /></span>info@keyphsolar.com
               </a>
             </li>
+         
+
             <li className="inline-block">
-              <a href="#" className="flex gap-2 items-center">
-                <span className="text-2xl"><FaFile /></span> Download Profile
-              </a>
+              <button
+                onClick={downloadFile}
+                className="flex gap-2 items-center"
+              >
+                <span className="text-2xl"><FaFile /></span>
+                Download Profile
+              </button>
             </li>
+
           </ul>
         </div>
       </div>
@@ -69,7 +84,7 @@ function Header() {
         </div>
 
         {/* Navigation Links (Large Screen) */}
-        <ul className="hidden lg:flex space-x-12 lg:space-x-8 text-[20px] font-bold text-white">
+        <ul className="hidden lg:flex space-x-12 lg:space-x-8 text-[24px] font-bold text-white">
           <li>
             <a href="/" className="text-white transition duration-200">Home</a>
           </li>
@@ -91,7 +106,7 @@ function Header() {
         <div className="contact-box hidden lg:block">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="flex items-center gap-2 text-[18px] font-bold text-white"
+            className="flex items-center gap-2 text-[24px] font-bold text-white"
           >
             Sign up For Free Quote <img src={Contactbtn} alt="Contact Us" />
           </button>

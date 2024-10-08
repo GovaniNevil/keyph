@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FullService from '../images/service-detail-1.png'
 import HalfService from '../images/service-detail-2.png'
-import Ongrid from '../images/on-grid.png'
+import Ongrid from '../images/images (1).jpg'
 import Offgrid from '../images/off-grid.png'
 import Hybridsolution from '../images/hybrid-solution.png'
 import Panelcleaning from '../images/pannel-cleaning.png'

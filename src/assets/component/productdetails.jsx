@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Productimg1 from '../images/product-details- (2).png'
-import Productimg2 from '../images/product-details- (3).png'
-import Productimg3 from '../images/product-details- (4).png'
-import Productimg4 from '../images/product-details- (5).png'
+import Productimg2 from '../images/product-details-(3).jpg'
+import Productimg3 from '../images/product-details-(4).jpg'
+import Productimg4 from '../images/product-details-(5).jpg'
 import Productimg5 from '../images/product-details- (1).png'
 
 

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Header from '../component/header';
-import Footer from '../component/footer';
 import Protect from '../images/Protect.webp';
 import Carben from '../images/karben-foot.webp';
 import Energy from '../images/energy-indi.webp';
@@ -15,7 +14,6 @@ const Company = () => {
 
     return (
         <>
-            <Header />
             <section className="why-switching-solar mt-[150px]">
                 <div className="container mx-auto">
                     <div className="title">
@@ -46,7 +44,7 @@ const Company = () => {
                 </div>
             </section>
             <SolarCostChart />
-            <section className="why-switching-now mt-[150px]">
+            <section className="why-switching-now mt-[150px] mb-[20px]">
                 <div className="container mx-auto">
                     <div className="title">
                         <h3 className='xl:text-[60px] md:text-[50px] text-[35px] font-bold text-[#0A6ED1] relative text-center'>Why Switch to Solar Now?</h3>
@@ -83,7 +81,6 @@ const Company = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </>
     );
 };

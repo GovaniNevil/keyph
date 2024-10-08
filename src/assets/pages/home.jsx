@@ -10,7 +10,8 @@ import Partner from '../component/partner';
 import Banefits from '../component/banefits';
 import Freedom from '../component/freedom';
 import Footer from '../component/footer';
-
+import Company from './company';
+import TeamSection from '../component/director'
 const Home = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
@@ -28,9 +29,11 @@ const Home = () => {
       {isVideoLoaded && (
         <>
           <Aboutintro />
+          <Company/>
           <Whyus />
           <Partner />
           <Vision />
+          <TeamSection/>
           <Process />
           <Footer />
         </>

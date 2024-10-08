@@ -1,5 +1,5 @@
 import React from 'react';
-import introvideo from '../images/KEYPH_SOLAR_SOLUTIONN.mp4';
+import introvideo from '../images/WhatsApp Video 2024-10-08 at 11.03.23 AM.mp4';
 
 const Video = ({ onVideoLoad }) => {
   return (
@@ -10,7 +10,8 @@ const Video = ({ onVideoLoad }) => {
         autoPlay 
         loop 
         onLoadedData={onVideoLoad} // This will trigger the callback once the video is loaded
-        className='mt-20 sm:mt-0'>
+        className='lg:w-full  md:w-auto mt-20 sm:mt-0"
+'>
       </video>
     </div>
   )

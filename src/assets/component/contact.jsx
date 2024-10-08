@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Contactbtn from '../images/contact-us-icon.png'
-import Contactprofile from '../images/profile.png'
+import Contactprofile from '../images/output-onlinepngtools (7) (1).png'
 import Location from '../images/location.png'
 import Call from '../images/call.png'
+import Contactprofile1 from '../images/output-onlinepngtools (7).png'
 
 function Contact() {
     useEffect(() => {
@@ -23,11 +24,14 @@ function Contact() {
                                 <div className="profile-img">
                                     <img src={Contactprofile} alt="" srcset="" />
                                 </div>
+                                <div className="profile-img">
+                                    <img src={Contactprofile1} alt="" srcset="" />
+                                </div>
                                 <div className="content text-white">
                                     <div className="title">
                                         <h3 className='text-white text-[30px]'>Keyph Solar Solution</h3>
                                     </div>
-                                    <a href="mailto:contact@keyphsolar.com">contact@keyphsolar.com</a>
+                                    <a href="mailto:contact@keyphsolar.com">info@keyphsolar.com</a>
                                 </div>
                             </div>
                             <div className="mail-box flex items-center gap-5 mb-5">
