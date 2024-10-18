@@ -1,5 +1,5 @@
 import React from 'react';
-import introvideo from '../images/WhatsApp Video 2024-10-08 at 11.03.23 AM.mp4';
+import introvideo from '../images/KEYPH_SOLAR_SOLUTIONN.mp4';
 
 const Video = ({ onVideoLoad }) => {
   return (

@@ -9,7 +9,7 @@ import Hybridsolution from '../images/hybrid-solution.png'
 import Panelcleaning from '../images/pannel-cleaning.png'
 import Mechanical from '../images/electrical-menegment.png'
 import Monitering from '../images/monitaring.png'
-import Easy from '../images/easy-solution.png'
+import Easy from '../images/Artboard – 16.png'
 import AMC from '../images/amc-service.png'
 
  
@@ -107,8 +107,8 @@ function Servicedetail() {
                         </div>
                     </div>
                     <div className="box flex lg:flex-row flex-col items-center md:mt-20 mt-10 md:gap-11 gap-4">
-                        <div className="img ">
-                            <img src={Easy} alt="" data-aos="flip-down" data-aos-delay="100"/>
+                        <div className="img w-[60%]">
+                            <img src={Easy} alt="" className='rounded-3xl'  data-aos="flip-down" data-aos-delay="100"/>
                         </div>
                         <div className="content lg:w-2/4 text-center lg:text-left">
                             <div className="title mb-4">
