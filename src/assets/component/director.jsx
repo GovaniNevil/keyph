@@ -1,6 +1,6 @@
 import React from 'react';
 import Director1 from '../images/Director1.jpeg';
-import Director2 from '../images/director2.jpeg';
+import Director2 from '../images/director2.jpg';
 
 const TeamSection = () => {
     const teamMembers = [
